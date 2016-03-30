@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17A5626ACBCB856155E3043E /* libPods-TestRailReporterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D54B928ACC23330F9DADCC /* libPods-TestRailReporterTests.a */; };
+		631372471CA225A500B89E89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 631372461CA225A500B89E89 /* main.m */; };
+		6313724A1CA225A500B89E89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 631372491CA225A500B89E89 /* AppDelegate.m */; };
+		6313724D1CA225A500B89E89 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313724C1CA225A500B89E89 /* ViewController.m */; };
+		631372501CA225A500B89E89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6313724E1CA225A500B89E89 /* Main.storyboard */; };
+		631372521CA225A500B89E89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631372511CA225A500B89E89 /* Assets.xcassets */; };
+		631372551CA225A500B89E89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631372531CA225A500B89E89 /* LaunchScreen.storyboard */; };
+		631372601CA225A500B89E89 /* TestRailReporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313725F1CA225A500B89E89 /* TestRailReporterTests.m */; };
+		6313726E1CA225D700B89E89 /* MITestRailProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313726B1CA225D700B89E89 /* MITestRailProject.m */; };
+		6313726F1CA225D700B89E89 /* MITestRailReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313726D1CA225D700B89E89 /* MITestRailReporter.m */; };
+		632395611CAB320A0013A657 /* MITestRailCustomStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 632395601CAB320A0013A657 /* MITestRailCustomStep.m */; };
+		632395641CAB3A760013A657 /* MITestRailMileStone.m in Sources */ = {isa = PBXBuildFile; fileRef = 632395631CAB3A760013A657 /* MITestRailMileStone.m */; };
+		6326B1641CA4A4810086EFA6 /* JSONValueTransformer+MITestRailTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6326B1631CA4A4810086EFA6 /* JSONValueTransformer+MITestRailTransformer.m */; };
+		6326B1671CA4AAC20086EFA6 /* MITestRailSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 6326B1661CA4AAC20086EFA6 /* MITestRailSuite.m */; };
+		6326B16E1CA4BA210086EFA6 /* MITestRailCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6326B16D1CA4BA210086EFA6 /* MITestRailCase.m */; };
+		634767191CA3353F00024FEC /* MITestRailConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 634767181CA3353F00024FEC /* MITestRailConstants.m */; };
+		635AF6C21CAB466D004D765B /* MITestRailUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 635AF6C11CAB466D004D765B /* MITestRailUser.m */; };
+		635AF6C51CAB4809004D765B /* MITestRailSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 635AF6C41CAB4809004D765B /* MITestRailSection.m */; };
+		635AF6C81CAB8E63004D765B /* MITestRailRun.m in Sources */ = {isa = PBXBuildFile; fileRef = 635AF6C71CAB8E63004D765B /* MITestRailRun.m */; };
+		7D4B8712D8AE0B0F25FDB1B3 /* libPods-TestRailReporter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8FBAEEA4DA24D3CC5E29BC /* libPods-TestRailReporter.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6313725C1CA225A500B89E89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6313723A1CA225A500B89E89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 631372411CA225A500B89E89;
+			remoteInfo = TestRailReporter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D54B928ACC23330F9DADCC /* libPods-TestRailReporterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestRailReporterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C8FBAEEA4DA24D3CC5E29BC /* libPods-TestRailReporter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestRailReporter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		631372421CA225A500B89E89 /* TestRailReporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestRailReporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		631372461CA225A500B89E89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		631372481CA225A500B89E89 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		631372491CA225A500B89E89 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6313724B1CA225A500B89E89 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6313724C1CA225A500B89E89 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6313724F1CA225A500B89E89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		631372511CA225A500B89E89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		631372541CA225A500B89E89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		631372561CA225A500B89E89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6313725B1CA225A500B89E89 /* TestRailReporterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestRailReporterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6313725F1CA225A500B89E89 /* TestRailReporterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRailReporterTests.m; sourceTree = "<group>"; };
+		631372611CA225A500B89E89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6313726A1CA225D700B89E89 /* MITestRailProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MITestRailProject.h; sourceTree = "<group>"; };
+		6313726B1CA225D700B89E89 /* MITestRailProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MITestRailProject.m; sourceTree = "<group>"; };
+		6313726C1CA225D700B89E89 /* MITestRailReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MITestRailReporter.h; sourceTree = "<group>"; };
+		6313726D1CA225D700B89E89 /* MITestRailReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MITestRailReporter.m; sourceTree = "<group>"; };
+		6323955F1CAB32090013A657 /* MITestRailCustomStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MITestRailCustomStep.h; sourceTree = "<group>"; };
+		632395601CAB320A0013A657 /* MITestRailCustomStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MITestRailCustomStep.m; sourceTree = "<group>"; };
+		632395621CAB3A760013A657 /* MITestRailMileStone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MITestRailMileStone.h; sourceTree = "<group>"; };
+		632395631CAB3A760013A657 /* MITestRailMileStone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MITestRailMileStone.m; sourceTree = "<group>"; };
+		6326B1621CA4A4810086EFA6 /* JSONValueTransformer+MITestRailTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+MITestRailTransformer.h"; sourceTree = "<group>"; };
+		6326B1631CA4A4810086EFA6 /* JSONValueTransformer+MITestRailTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+MITestRailTransformer.m"; sourceTree = "<group>"; };
+		6326B1651CA4AAC20086EFA6 /* MITestRailSuite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MITestRailSuite.h; sourceTree = "<group>"; };
+		6326B1661CA4AAC20086EFA6 /* MITestRailSuite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MITestRailSuite.m; sourceTree = "<group>"; };
+		6326B16C1CA4BA210086EFA6 /* MITestRailCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MITestRailCase.h; sourceTree = "<group>"; };
+		6326B16D1CA4BA210086EFA6 /* MITestRailCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MITestRailCase.m; sourceTree = "<group>"; };
+		634767171CA3353F00024FEC /* MITestRailConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MITestRailConstants.h; sourceTree = "<group>"; };
+		634767181CA3353F00024FEC /* MITestRailConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MITestRailConstants.m; sourceTree = "<group>"; };
+		635AF6C01CAB466D004D765B /* MITestRailUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MITestRailUser.h; sourceTree = "<group>"; };
+		635AF6C11CAB466D004D765B /* MITestRailUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MITestRailUser.m; sourceTree = "<group>"; };
+		635AF6C31CAB4809004D765B /* MITestRailSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MITestRailSection.h; sourceTree = "<group>"; };
+		635AF6C41CAB4809004D765B /* MITestRailSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MITestRailSection.m; sourceTree = "<group>"; };
+		635AF6C61CAB8E63004D765B /* MITestRailRun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MITestRailRun.h; sourceTree = "<group>"; };
+		635AF6C71CAB8E63004D765B /* MITestRailRun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MITestRailRun.m; sourceTree = "<group>"; };
+		8639AE9BEF9BA7E5069068D6 /* Pods-TestRailReporterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestRailReporterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestRailReporterTests/Pods-TestRailReporterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E825B101E03BFB7E3EF0B0C /* Pods-TestRailReporter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestRailReporter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestRailReporter/Pods-TestRailReporter.debug.xcconfig"; sourceTree = "<group>"; };
+		BCA1FEDD72DE42A24C66F0E5 /* Pods-TestRailReporter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestRailReporter.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestRailReporter/Pods-TestRailReporter.release.xcconfig"; sourceTree = "<group>"; };
+		E87E9B5475B950A09A633A37 /* Pods-TestRailReporterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestRailReporterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestRailReporterTests/Pods-TestRailReporterTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6313723F1CA225A500B89E89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D4B8712D8AE0B0F25FDB1B3 /* libPods-TestRailReporter.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		631372581CA225A500B89E89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17A5626ACBCB856155E3043E /* libPods-TestRailReporterTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44BE56831C362930BC943936 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E825B101E03BFB7E3EF0B0C /* Pods-TestRailReporter.debug.xcconfig */,
+				BCA1FEDD72DE42A24C66F0E5 /* Pods-TestRailReporter.release.xcconfig */,
+				8639AE9BEF9BA7E5069068D6 /* Pods-TestRailReporterTests.debug.xcconfig */,
+				E87E9B5475B950A09A633A37 /* Pods-TestRailReporterTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		631372391CA225A500B89E89 = {
+			isa = PBXGroup;
+			children = (
+				631372441CA225A500B89E89 /* TestRailReporter */,
+				6313725E1CA225A500B89E89 /* TestRailReporterTests */,
+				631372431CA225A500B89E89 /* Products */,
+				44BE56831C362930BC943936 /* Pods */,
+				CDA5E532015B5E9F2B132884 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		631372431CA225A500B89E89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				631372421CA225A500B89E89 /* TestRailReporter.app */,
+				6313725B1CA225A500B89E89 /* TestRailReporterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		631372441CA225A500B89E89 /* TestRailReporter */ = {
+			isa = PBXGroup;
+			children = (
+				631372481CA225A500B89E89 /* AppDelegate.h */,
+				631372491CA225A500B89E89 /* AppDelegate.m */,
+				6313724B1CA225A500B89E89 /* ViewController.h */,
+				6313724C1CA225A500B89E89 /* ViewController.m */,
+				6313724E1CA225A500B89E89 /* Main.storyboard */,
+				631372511CA225A500B89E89 /* Assets.xcassets */,
+				631372531CA225A500B89E89 /* LaunchScreen.storyboard */,
+				631372561CA225A500B89E89 /* Info.plist */,
+				631372451CA225A500B89E89 /* Supporting Files */,
+			);
+			path = TestRailReporter;
+			sourceTree = "<group>";
+		};
+		631372451CA225A500B89E89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				631372461CA225A500B89E89 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6313725E1CA225A500B89E89 /* TestRailReporterTests */ = {
+			isa = PBXGroup;
+			children = (
+				6326B16B1CA4B73B0086EFA6 /* Model */,
+				634767171CA3353F00024FEC /* MITestRailConstants.h */,
+				634767181CA3353F00024FEC /* MITestRailConstants.m */,
+				6313726C1CA225D700B89E89 /* MITestRailReporter.h */,
+				6313726D1CA225D700B89E89 /* MITestRailReporter.m */,
+				6313725F1CA225A500B89E89 /* TestRailReporterTests.m */,
+				6326B1621CA4A4810086EFA6 /* JSONValueTransformer+MITestRailTransformer.h */,
+				6326B1631CA4A4810086EFA6 /* JSONValueTransformer+MITestRailTransformer.m */,
+				631372611CA225A500B89E89 /* Info.plist */,
+			);
+			path = TestRailReporterTests;
+			sourceTree = "<group>";
+		};
+		6326B16B1CA4B73B0086EFA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6313726A1CA225D700B89E89 /* MITestRailProject.h */,
+				6313726B1CA225D700B89E89 /* MITestRailProject.m */,
+				6326B1651CA4AAC20086EFA6 /* MITestRailSuite.h */,
+				6326B1661CA4AAC20086EFA6 /* MITestRailSuite.m */,
+				6326B16C1CA4BA210086EFA6 /* MITestRailCase.h */,
+				6326B16D1CA4BA210086EFA6 /* MITestRailCase.m */,
+				6323955F1CAB32090013A657 /* MITestRailCustomStep.h */,
+				632395601CAB320A0013A657 /* MITestRailCustomStep.m */,
+				632395621CAB3A760013A657 /* MITestRailMileStone.h */,
+				632395631CAB3A760013A657 /* MITestRailMileStone.m */,
+				635AF6C01CAB466D004D765B /* MITestRailUser.h */,
+				635AF6C11CAB466D004D765B /* MITestRailUser.m */,
+				635AF6C31CAB4809004D765B /* MITestRailSection.h */,
+				635AF6C41CAB4809004D765B /* MITestRailSection.m */,
+				635AF6C61CAB8E63004D765B /* MITestRailRun.h */,
+				635AF6C71CAB8E63004D765B /* MITestRailRun.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CDA5E532015B5E9F2B132884 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C8FBAEEA4DA24D3CC5E29BC /* libPods-TestRailReporter.a */,
+				00D54B928ACC23330F9DADCC /* libPods-TestRailReporterTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		631372411CA225A500B89E89 /* TestRailReporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 631372641CA225A500B89E89 /* Build configuration list for PBXNativeTarget "TestRailReporter" */;
+			buildPhases = (
+				ADC5DBDEA2D1F5E73E2C516C /* 📦 Check Pods Manifest.lock */,
+				6313723E1CA225A500B89E89 /* Sources */,
+				6313723F1CA225A500B89E89 /* Frameworks */,
+				631372401CA225A500B89E89 /* Resources */,
+				A3BC38D99F2242FB6880D345 /* 📦 Embed Pods Frameworks */,
+				8C06C905470DD05C314C4301 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestRailReporter;
+			productName = TestRailReporter;
+			productReference = 631372421CA225A500B89E89 /* TestRailReporter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6313725A1CA225A500B89E89 /* TestRailReporterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 631372671CA225A500B89E89 /* Build configuration list for PBXNativeTarget "TestRailReporterTests" */;
+			buildPhases = (
+				6730431546DD2EEE5614E1C2 /* 📦 Check Pods Manifest.lock */,
+				631372571CA225A500B89E89 /* Sources */,
+				631372581CA225A500B89E89 /* Frameworks */,
+				631372591CA225A500B89E89 /* Resources */,
+				8074E37189EC63FA6D67CEA3 /* 📦 Embed Pods Frameworks */,
+				A2D575E0085F38DF5261FB2E /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6313725D1CA225A500B89E89 /* PBXTargetDependency */,
+			);
+			name = TestRailReporterTests;
+			productName = TestRailReporterTests;
+			productReference = 6313725B1CA225A500B89E89 /* TestRailReporterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6313723A1CA225A500B89E89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Sid Inc.";
+				TargetAttributes = {
+					631372411CA225A500B89E89 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					6313725A1CA225A500B89E89 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 631372411CA225A500B89E89;
+					};
+				};
+			};
+			buildConfigurationList = 6313723D1CA225A500B89E89 /* Build configuration list for PBXProject "TestRailReporter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 631372391CA225A500B89E89;
+			productRefGroup = 631372431CA225A500B89E89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				631372411CA225A500B89E89 /* TestRailReporter */,
+				6313725A1CA225A500B89E89 /* TestRailReporterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		631372401CA225A500B89E89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631372551CA225A500B89E89 /* LaunchScreen.storyboard in Resources */,
+				631372521CA225A500B89E89 /* Assets.xcassets in Resources */,
+				631372501CA225A500B89E89 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		631372591CA225A500B89E89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6730431546DD2EEE5614E1C2 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8074E37189EC63FA6D67CEA3 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestRailReporterTests/Pods-TestRailReporterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C06C905470DD05C314C4301 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestRailReporter/Pods-TestRailReporter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2D575E0085F38DF5261FB2E /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestRailReporterTests/Pods-TestRailReporterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3BC38D99F2242FB6880D345 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestRailReporter/Pods-TestRailReporter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADC5DBDEA2D1F5E73E2C516C /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6313723E1CA225A500B89E89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6313724D1CA225A500B89E89 /* ViewController.m in Sources */,
+				6313724A1CA225A500B89E89 /* AppDelegate.m in Sources */,
+				631372471CA225A500B89E89 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		631372571CA225A500B89E89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631372601CA225A500B89E89 /* TestRailReporterTests.m in Sources */,
+				6313726E1CA225D700B89E89 /* MITestRailProject.m in Sources */,
+				6326B1671CA4AAC20086EFA6 /* MITestRailSuite.m in Sources */,
+				6313726F1CA225D700B89E89 /* MITestRailReporter.m in Sources */,
+				634767191CA3353F00024FEC /* MITestRailConstants.m in Sources */,
+				635AF6C81CAB8E63004D765B /* MITestRailRun.m in Sources */,
+				632395641CAB3A760013A657 /* MITestRailMileStone.m in Sources */,
+				6326B1641CA4A4810086EFA6 /* JSONValueTransformer+MITestRailTransformer.m in Sources */,
+				632395611CAB320A0013A657 /* MITestRailCustomStep.m in Sources */,
+				635AF6C21CAB466D004D765B /* MITestRailUser.m in Sources */,
+				6326B16E1CA4BA210086EFA6 /* MITestRailCase.m in Sources */,
+				635AF6C51CAB4809004D765B /* MITestRailSection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6313725D1CA225A500B89E89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 631372411CA225A500B89E89 /* TestRailReporter */;
+			targetProxy = 6313725C1CA225A500B89E89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6313724E1CA225A500B89E89 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6313724F1CA225A500B89E89 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		631372531CA225A500B89E89 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				631372541CA225A500B89E89 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		631372621CA225A500B89E89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		631372631CA225A500B89E89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		631372651CA225A500B89E89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E825B101E03BFB7E3EF0B0C /* Pods-TestRailReporter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestRailReporter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddarthapolisetty.TestRailReporter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		631372661CA225A500B89E89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCA1FEDD72DE42A24C66F0E5 /* Pods-TestRailReporter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestRailReporter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddarthapolisetty.TestRailReporter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		631372681CA225A500B89E89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8639AE9BEF9BA7E5069068D6 /* Pods-TestRailReporterTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TestRailReporterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddarthapolisetty.TestRailReporterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestRailReporter.app/TestRailReporter";
+			};
+			name = Debug;
+		};
+		631372691CA225A500B89E89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E87E9B5475B950A09A633A37 /* Pods-TestRailReporterTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TestRailReporterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddarthapolisetty.TestRailReporterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestRailReporter.app/TestRailReporter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6313723D1CA225A500B89E89 /* Build configuration list for PBXProject "TestRailReporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				631372621CA225A500B89E89 /* Debug */,
+				631372631CA225A500B89E89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		631372641CA225A500B89E89 /* Build configuration list for PBXNativeTarget "TestRailReporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				631372651CA225A500B89E89 /* Debug */,
+				631372661CA225A500B89E89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		631372671CA225A500B89E89 /* Build configuration list for PBXNativeTarget "TestRailReporterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				631372681CA225A500B89E89 /* Debug */,
+				631372691CA225A500B89E89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6313723A1CA225A500B89E89 /* Project object */;
+}

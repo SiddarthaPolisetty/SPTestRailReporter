@@ -38,4 +38,9 @@
     return YES;
 }
 
+#pragma mark - description
+- (NSString *)description {
+    NSString *caseDescription = [self toJSONString];
+    return caseDescription;
+}
 @end

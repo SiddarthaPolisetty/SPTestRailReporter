@@ -29,7 +29,7 @@
 
 #pragma mark - description
 - (NSString *)description {
-    NSString *customStepDescription = [NSString stringWithFormat:@"<CustomStep content = %@, expected =  %@>", self.content, self.expected];
+    NSString *customStepDescription = [self toJSONString];
     return customStepDescription;
 }
 

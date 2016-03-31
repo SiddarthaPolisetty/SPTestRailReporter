@@ -7,27 +7,7 @@
 //
 
 #import "MITestRailSuite.h"
-/*
- @property (nonatomic) int suiteId;
- @property (nonatomic, strong) NSString *suiteName;
- @property (nonatomic, strong) NSString *suiteDescription;
- @property (nonatomic) int projectId;
- @property (nonatomic, strong) NSURL *suiteURL;
- 
- {
-	"description": "..",
-	"id": 1,
-	"name": "Setup & Installation",
-	"project_id": 1,
-	"url": "http://<server>/testrail/index.php?/suites/view/1"
- "completed_on" = "<null>";
- description = "These test cases are specific to Docs@work Android Client";
- id = 253;
- "is_baseline" = 0;
- "is_completed" = 0;
- "is_master" = 0;
- }
- */
+
 @interface MITestRailSuite ()
 @property (nonatomic, readwrite) int suiteId;
 @end
@@ -62,8 +42,8 @@
 
 #pragma mark - description
 - (NSString *)description {
-    NSString *projectDescription = [NSString stringWithFormat:@"<Suite id = %d, name = %@, url =  %@, projectId = %d, description = %@>", self.suiteId, self.suiteName, self.suiteURL, self.projectId, self.suiteDescription];
-    return projectDescription;
+    NSString *suiteDescription = [self toJSONString];
+    return suiteDescription;
 }
 
 

@@ -22,7 +22,7 @@
 
 #pragma mark - description
 - (NSString *)description {
-    NSString *userDescription = [NSString stringWithFormat:@"<User id = %d, name = %@, email =  %@, active = %d>", self.userId, self.name, self.email, self.isActive];
+    NSString *userDescription = [self toJSONString];
     return userDescription;
 }
 @end

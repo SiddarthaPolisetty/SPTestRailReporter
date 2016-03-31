@@ -7,6 +7,7 @@
 //
 
 #import <JSONModel/JSONModel.h>
+
 @interface MITestRailRun : JSONModel
 @property (nonatomic) int runId;
 @property (nonatomic) int suiteId;
@@ -28,4 +29,9 @@
 @property (nonatomic, strong) NSDate *completedOn;
 @property (nonatomic, strong) NSDate *createdOn;
 @property (nonatomic, strong) NSURL *runURL;
+@property (nonatomic, strong) NSArray *configIds;
+@end
+
+@protocol MITestRailRun
+
 @end

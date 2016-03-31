@@ -10,5 +10,5 @@
 
 extern const NSString *kMITestRailBaseURL;
 @interface MITestRailConstants : NSObject
-+ (NSString *)getBasicAuthHeader;
+
 @end

@@ -25,7 +25,7 @@
 
 #pragma mark - description
 - (NSString *)description {
-    NSString *sectionDescription = [NSString stringWithFormat:@"<Section id = %d, name = %@, description = %@, depth =  %d, suite id = %d>", self.sectionId, self.name,self.sectionDescription ,self.depth, self.suiteId];
+    NSString *sectionDescription = [self toJSONString];
     return sectionDescription;
 }
 @end

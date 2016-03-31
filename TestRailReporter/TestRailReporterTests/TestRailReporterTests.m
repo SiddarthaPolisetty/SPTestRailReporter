@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "MITestRailReporter.h"
+#import "MITestRailConfigurationBuilder.h"
 
 @interface TestRailReporterTests : XCTestCase
 
@@ -25,12 +26,23 @@
     [super tearDown];
 }
 
+
+- (void)testAuthHeader {
+    [MITestRailConfigurationBuilder sharedConfigurationBuilder].userName = @"spolisetty@mobileiron.com";
+    [MITestRailConfigurationBuilder sharedConfigurationBuilder].password = @"Siddarth1!";
+    NSString *authHeaderString = [MITestRailConfigurationBuilder sharedConfigurationBuilder].valueForAuthHeader;
+    NSLog(@"%@", authHeaderString);
+    NSAssert([authHeaderString isEqualToString:@"Basic c3BvbGlzZXR0eUBtb2JpbGVpcm9uLmNvbTpTaWRkYXJ0aDEh"], @"Mismatch");
+}
+
 - (void)testExample {
-    // This is an example of a functional test case.
+    [MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL = [NSURL URLWithString:@"https://mobileiron.testrail.net"];
+    [MITestRailConfigurationBuilder sharedConfigurationBuilder].userName = @"";
+    [MITestRailConfigurationBuilder sharedConfigurationBuilder].password = @"";
     NSArray *mileStones = [[MITestRailReporter sharedReporter] getAllMileStones];
     __unused NSArray *testRuns = [[MITestRailReporter sharedReporter] getAllTestRuns];
     __unused NSArray *testCases = [[MITestRailReporter sharedReporter] getAllTestCases];
-    NSArray *projects = [[MITestRailReporter sharedReporter] getAllProjects];
+   NSArray *projects = [[MITestRailReporter sharedReporter] getAllProjects];
     NSArray *suites = [[MITestRailReporter sharedReporter] getAllSuitesForProject:23];
     for (MITestRailSuite *suite in suites) {
         NSLog(@"%@", suite.description);

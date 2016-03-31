@@ -31,12 +31,19 @@
                                                        @"config" : @"config",
                                                        @"completed_on" : @"completedOn",
                                                        @"created_on" : @"createdOn",
-                                                       @"url" : @"runURL"
+                                                       @"url" : @"runURL",
+                                                       @"config_ids" : @"configIds"
                                                        }];
 }
 
 +(BOOL)propertyIsOptional:(NSString*)propertyName
 {
     return YES;
+}
+
+#pragma mark - description
+- (NSString *)description {
+    NSString *runDescription = [self toJSONString];
+    return runDescription;
 }
 @end

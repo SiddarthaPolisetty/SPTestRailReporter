@@ -7,7 +7,7 @@
 //
 #import "MITestRailReporter.h"
 #import <AFNetworking/AFHTTPRequestOperationManager.h>
-#import "MITestRailConstants.h"
+#import "MITestRailConfigurationBuilder.h"
 #import "NSData+Base64.h"
 #import "JSONHTTPClient.h"
 
@@ -47,7 +47,7 @@
     [mitrRequest setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [mitrRequest setValue:@"application/json; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
     [mitrRequest setValue:@"MITestRailReporter Client" forHTTPHeaderField:@"User-Agent"];
-    [mitrRequest setValue:[MITestRailConstants getBasicAuthHeader] forHTTPHeaderField:@"Authorization"];
+    [mitrRequest setValue:[MITestRailConfigurationBuilder sharedConfigurationBuilder].valueForAuthHeader forHTTPHeaderField:@"Authorization"];
     if (parameters) {
         NSError *error = nil;
         NSData *requestData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:&error];
@@ -59,7 +59,7 @@
         reponseJSON = [responseObject mutableCopy];
         dispatch_semaphore_signal(semaphore);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        [NSException raise:@"Error" format:[NSString stringWithFormat:@"%@", error]];
+        [NSException raise:@"Error" format:[NSString stringWithFormat:@"%@", error.description]];
     }];
     [operation start];
     dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
@@ -73,8 +73,10 @@
     NSURL *getAllTestRunsURL = [NSURL URLWithString:urlString];
     NSArray *testRunsResponse = (NSArray *)[self syncronousRequestWithMethod:@"GET" URL:getAllTestRunsURL Parameters:nil];
     for (NSDictionary *testRunDict in testRunsResponse) {
+        NSMutableDictionary *mutableTestRun = [NSMutableDictionary dictionaryWithDictionary:testRunDict];
+        mutableTestRun[@"config_ids"] = @[@1 , @3];
         NSError *error = nil;
-        MITestRailRun *testRun = [[MITestRailRun alloc] initWithDictionary:testRunDict error:&error];
+        MITestRailRun *testRun = [[MITestRailRun alloc] initWithDictionary:mutableTestRun error:&error];
         if (!error) {
             [testRunsArray addObject:testRun];
         }else {
@@ -154,13 +156,8 @@
     NSString *urlString = [NSString stringWithFormat:@"https://mobileiron.testrail.net?/api/v2/get_suites/%d", projectId];
     NSURL *getAllSuitesURL = [NSURL URLWithString:urlString];
     NSArray *suitesResponse = (NSArray *)[self syncronousRequestWithMethod:@"GET" URL:getAllSuitesURL Parameters:nil];
-    for (NSDictionary *dict in suitesResponse) {
-        NSError *error = nil;
-        MITestRailSuite *suite = [[MITestRailSuite alloc] initWithDictionary:dict error:&error];
-        if (!error) {
-            [suitesArray addObject:suite];
-        }
-    }
+    NSError *error = nil;
+    suitesArray = [MITestRailSuite arrayOfModelsFromDictionaries:suitesResponse error:&error];
     return suitesArray;
 }
 
@@ -199,15 +196,11 @@
 
 - (NSArray *)getAllProjects {
     NSMutableArray *projectsArray = [NSMutableArray array];
-    NSURL *getAllProjectsURL = [NSURL URLWithString:@"https://mobileiron.testrail.net?/api/v2/get_projects"];
+    NSString *getAllProjectsURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:@"index.php?/api/v2/get_projects"];
+    NSURL *getAllProjectsURL = [NSURL URLWithString:getAllProjectsURLString];
     NSArray *projectsResponse = (NSArray *)[self syncronousRequestWithMethod:@"GET" URL:getAllProjectsURL Parameters:nil];
-    for (NSDictionary *dict in projectsResponse) {
-        NSError *error = nil;
-        MITestRailProject *project = [[MITestRailProject alloc] initWithDictionary:dict error:&error];
-        if (!error) {
-            [projectsArray addObject:project];
-        }
-    }
+    NSError *error = nil;
+    projectsArray = [MITestRailProject arrayOfModelsFromDictionaries:projectsResponse error:&error];
     return projectsArray;
 }
 

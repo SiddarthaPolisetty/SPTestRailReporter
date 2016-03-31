@@ -7,10 +7,8 @@
 //
 
 #import "MITestRailConstants.h"
+#import "MITestRailConfigurationBuilder.h"
 @implementation MITestRailConstants
 
-+ (NSString *)getBasicAuthHeader {
-    return @"Basic c3BvbGlzZXR0eUBtb2JpbGVpcm9uLmNvbTpTaWRkYXJ0aDEh";
-}
 
 @end

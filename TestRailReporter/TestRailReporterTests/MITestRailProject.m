@@ -48,7 +48,7 @@
 
 #pragma mark - description
 - (NSString *)description {
-    NSString *projectDescription = [NSString stringWithFormat:@"<Project id = %d, name = %@, url =  %@, suiteMode = %d, completedOn = %@>", self.projectId, self.name, self.projectURL, self.suiteMode, self.completedOn];
+    NSString *projectDescription = [self toJSONString];
     return projectDescription;
 }
 @end

@@ -25,7 +25,7 @@
 
 #pragma mark - description
 - (NSString *)description {
-    NSString *mileStoneDescription = [NSString stringWithFormat:@"<MileStone id = %d, name = %@, url =  %@, projectId = %d, description = %@, completed on = %@, due on = %@>", self.mileStoneId, self.name, self.mileStoneURL, self.projectId, self.mileStoneDescription, self.completedOn, self.dueOn];
+    NSString *mileStoneDescription = [self toJSONString];
     return mileStoneDescription;
 }
 @end

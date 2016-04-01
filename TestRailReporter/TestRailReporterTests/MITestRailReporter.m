@@ -168,7 +168,8 @@
 
 #pragma mark - project CRUD
 - (MITestRailProject *)updateProject:(MITestRailProject *)project {
-    NSURL *updateProjectURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://mobileiron.testrail.net?/api/v2/update_project/%d", project.projectId]];
+    NSString *updateProjectURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:[NSString stringWithFormat:@"index.php?/api/v2/update_project/%d", project.projectId]];
+    NSURL *updateProjectURL = [NSURL URLWithString:updateProjectURLString];
     NSDictionary *requestDictionary = [project toDictionary];
     NSDictionary *projectsResponse = (NSDictionary *)[self syncronousRequestWithMethod:@"POST" URL:updateProjectURL Parameters:requestDictionary];
     NSError *error = nil;
@@ -178,15 +179,17 @@
 
 - (MITestRailProject *)createProject:(MITestRailProject *)project {
     NSDictionary *requestDictionary = [project toDictionary];
-    NSURL *addProjectURL = [NSURL URLWithString:@"https://mobileiron.testrail.net?/api/v2/add_project"];
-    NSDictionary *projectsResponse = (NSDictionary *)[self syncronousRequestWithMethod:@"POST" URL:addProjectURL Parameters:requestDictionary];
+    NSString *createProjectURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:[NSString stringWithFormat:@"index.php?/api/v2/add_project"]];
+    NSURL *createProjectURL = [NSURL URLWithString:createProjectURLString];
+    NSDictionary *projectsResponse = (NSDictionary *)[self syncronousRequestWithMethod:@"POST" URL:createProjectURL Parameters:requestDictionary];
     NSError *error = nil;
     MITestRailProject *responseProject = [[MITestRailProject alloc] initWithDictionary:projectsResponse error:&error];
     return error ? nil :responseProject;
 }
 
 - (MITestRailProject *)getProjectWithId:(int)projectId {
-    NSURL *getProjectURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://mobileiron.testrail.net?/api/v2/get_project/%d", projectId]];
+    NSString *getProjectURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:[NSString stringWithFormat:@"index.php?/api/v2/get_project/%d", projectId]];
+    NSURL *getProjectURL = [NSURL URLWithString:getProjectURLString];
     NSDictionary *projectsResponse = (NSDictionary *)[self syncronousRequestWithMethod:@"GET" URL:getProjectURL Parameters:nil];
     NSError *error = nil;
     MITestRailProject *responseProject = [[MITestRailProject alloc] initWithDictionary:projectsResponse error:&error];
@@ -204,9 +207,10 @@
     return projectsArray;
 }
 
-- (BOOL)deleteProject:(int)projectId {
-    NSURL *deleteProjectURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://mobileiron.testrail.net?/api/v2/delete_project/%d", projectId]];
-    NSDictionary *projectsResponse = (NSDictionary *)[self syncronousRequestWithMethod:@"POST" URL:deleteProjectURL Parameters:nil];
+- (BOOL)deleteProjectWithId:(int)projectId {
+    NSString *deleteProjectURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:[NSString stringWithFormat:@"index.php?/api/v2/delete_project/%d", projectId]];
+    NSURL *deleteProjectURL = [NSURL URLWithString:deleteProjectURLString];
+    [self syncronousRequestWithMethod:@"POST" URL:deleteProjectURL Parameters:nil];
     return YES;
 }
 

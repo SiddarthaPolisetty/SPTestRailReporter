@@ -14,7 +14,7 @@
 		631372501CA225A500B89E89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6313724E1CA225A500B89E89 /* Main.storyboard */; };
 		631372521CA225A500B89E89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631372511CA225A500B89E89 /* Assets.xcassets */; };
 		631372551CA225A500B89E89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631372531CA225A500B89E89 /* LaunchScreen.storyboard */; };
-		631372601CA225A500B89E89 /* TestRailReporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313725F1CA225A500B89E89 /* TestRailReporterTests.m */; };
+		631372601CA225A500B89E89 /* MITestRailProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313725F1CA225A500B89E89 /* MITestRailProjectTests.m */; };
 		6313726E1CA225D700B89E89 /* MITestRailProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313726B1CA225D700B89E89 /* MITestRailProject.m */; };
 		6313726F1CA225D700B89E89 /* MITestRailReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313726D1CA225D700B89E89 /* MITestRailReporter.m */; };
 		631F313D1CAC505C002E3D33 /* MITestRailTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 631F313C1CAC505C002E3D33 /* MITestRailTest.m */; };
@@ -26,6 +26,8 @@
 		6326B1641CA4A4810086EFA6 /* JSONValueTransformer+MITestRailTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6326B1631CA4A4810086EFA6 /* JSONValueTransformer+MITestRailTransformer.m */; };
 		6326B1671CA4AAC20086EFA6 /* MITestRailSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 6326B1661CA4AAC20086EFA6 /* MITestRailSuite.m */; };
 		6326B16E1CA4BA210086EFA6 /* MITestRailCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6326B16D1CA4BA210086EFA6 /* MITestRailCase.m */; };
+		6330EB441CAE523D00180D6A /* MITestRailConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 6330EB431CAE523D00180D6A /* MITestRailConfiguration.m */; };
+		6330EB471CAE52DE00180D6A /* MITestRailSubConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 6330EB461CAE52DE00180D6A /* MITestRailSubConfiguration.m */; };
 		634767191CA3353F00024FEC /* MITestRailConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 634767181CA3353F00024FEC /* MITestRailConstants.m */; };
 		635AF6C21CAB466D004D765B /* MITestRailUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 635AF6C11CAB466D004D765B /* MITestRailUser.m */; };
 		635AF6C51CAB4809004D765B /* MITestRailSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 635AF6C41CAB4809004D765B /* MITestRailSection.m */; };
@@ -58,7 +60,7 @@
 		631372541CA225A500B89E89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		631372561CA225A500B89E89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6313725B1CA225A500B89E89 /* TestRailReporterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestRailReporterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6313725F1CA225A500B89E89 /* TestRailReporterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRailReporterTests.m; sourceTree = "<group>"; };
+		6313725F1CA225A500B89E89 /* MITestRailProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MITestRailProjectTests.m; sourceTree = "<group>"; };
 		631372611CA225A500B89E89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6313726A1CA225D700B89E89 /* MITestRailProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MITestRailProject.h; sourceTree = "<group>"; };
 		6313726B1CA225D700B89E89 /* MITestRailProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MITestRailProject.m; sourceTree = "<group>"; };
@@ -82,6 +84,10 @@
 		6326B1661CA4AAC20086EFA6 /* MITestRailSuite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MITestRailSuite.m; sourceTree = "<group>"; };
 		6326B16C1CA4BA210086EFA6 /* MITestRailCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MITestRailCase.h; sourceTree = "<group>"; };
 		6326B16D1CA4BA210086EFA6 /* MITestRailCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MITestRailCase.m; sourceTree = "<group>"; };
+		6330EB421CAE523D00180D6A /* MITestRailConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MITestRailConfiguration.h; sourceTree = "<group>"; };
+		6330EB431CAE523D00180D6A /* MITestRailConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MITestRailConfiguration.m; sourceTree = "<group>"; };
+		6330EB451CAE52DE00180D6A /* MITestRailSubConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MITestRailSubConfiguration.h; sourceTree = "<group>"; };
+		6330EB461CAE52DE00180D6A /* MITestRailSubConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MITestRailSubConfiguration.m; sourceTree = "<group>"; };
 		634767171CA3353F00024FEC /* MITestRailConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MITestRailConstants.h; sourceTree = "<group>"; };
 		634767181CA3353F00024FEC /* MITestRailConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MITestRailConstants.m; sourceTree = "<group>"; };
 		635AF6C01CAB466D004D765B /* MITestRailUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MITestRailUser.h; sourceTree = "<group>"; };
@@ -176,16 +182,11 @@
 		6313725E1CA225A500B89E89 /* TestRailReporterTests */ = {
 			isa = PBXGroup;
 			children = (
+				6330EB3E1CAE4C0F00180D6A /* Utils */,
+				6330EB3D1CAE4C0800180D6A /* Tests */,
 				631F31471CAC93C6002E3D33 /* Configuration */,
 				6326B16B1CA4B73B0086EFA6 /* Model */,
-				634767171CA3353F00024FEC /* MITestRailConstants.h */,
-				634767181CA3353F00024FEC /* MITestRailConstants.m */,
-				6313726C1CA225D700B89E89 /* MITestRailReporter.h */,
-				6313726D1CA225D700B89E89 /* MITestRailReporter.m */,
-				6313725F1CA225A500B89E89 /* TestRailReporterTests.m */,
-				6326B1621CA4A4810086EFA6 /* JSONValueTransformer+MITestRailTransformer.h */,
-				6326B1631CA4A4810086EFA6 /* JSONValueTransformer+MITestRailTransformer.m */,
-				631372611CA225A500B89E89 /* Info.plist */,
+				6330EB3F1CAE4C2F00180D6A /* Resources */,
 			);
 			path = TestRailReporterTests;
 			sourceTree = "<group>";
@@ -226,8 +227,41 @@
 				631F313F1CAC5464002E3D33 /* MITestRailPlan.m */,
 				631F31411CAC6BE0002E3D33 /* MITestRailPlanEntry.h */,
 				631F31421CAC6BE0002E3D33 /* MITestRailPlanEntry.m */,
+				6330EB421CAE523D00180D6A /* MITestRailConfiguration.h */,
+				6330EB431CAE523D00180D6A /* MITestRailConfiguration.m */,
+				6330EB451CAE52DE00180D6A /* MITestRailSubConfiguration.h */,
+				6330EB461CAE52DE00180D6A /* MITestRailSubConfiguration.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		6330EB3D1CAE4C0800180D6A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6313725F1CA225A500B89E89 /* MITestRailProjectTests.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		6330EB3E1CAE4C0F00180D6A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				634767171CA3353F00024FEC /* MITestRailConstants.h */,
+				634767181CA3353F00024FEC /* MITestRailConstants.m */,
+				6313726C1CA225D700B89E89 /* MITestRailReporter.h */,
+				6313726D1CA225D700B89E89 /* MITestRailReporter.m */,
+				6326B1621CA4A4810086EFA6 /* JSONValueTransformer+MITestRailTransformer.h */,
+				6326B1631CA4A4810086EFA6 /* JSONValueTransformer+MITestRailTransformer.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		6330EB3F1CAE4C2F00180D6A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				631372611CA225A500B89E89 /* Info.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		CDA5E532015B5E9F2B132884 /* Frameworks */ = {
@@ -448,7 +482,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				631372601CA225A500B89E89 /* TestRailReporterTests.m in Sources */,
+				631372601CA225A500B89E89 /* MITestRailProjectTests.m in Sources */,
 				6313726E1CA225D700B89E89 /* MITestRailProject.m in Sources */,
 				631F31401CAC5464002E3D33 /* MITestRailPlan.m in Sources */,
 				6326B1671CA4AAC20086EFA6 /* MITestRailSuite.m in Sources */,
@@ -457,6 +491,7 @@
 				635AF6C81CAB8E63004D765B /* MITestRailRun.m in Sources */,
 				632395641CAB3A760013A657 /* MITestRailMileStone.m in Sources */,
 				6326B1641CA4A4810086EFA6 /* JSONValueTransformer+MITestRailTransformer.m in Sources */,
+				6330EB471CAE52DE00180D6A /* MITestRailSubConfiguration.m in Sources */,
 				632395611CAB320A0013A657 /* MITestRailCustomStep.m in Sources */,
 				631F313D1CAC505C002E3D33 /* MITestRailTest.m in Sources */,
 				631F31431CAC6BE0002E3D33 /* MITestRailPlanEntry.m in Sources */,
@@ -464,6 +499,7 @@
 				631F314A1CAC93E6002E3D33 /* MITestRailConfigurationBuilder.m in Sources */,
 				635D05F61CABB286009D017C /* MITestRailResult.m in Sources */,
 				6326B16E1CA4BA210086EFA6 /* MITestRailCase.m in Sources */,
+				6330EB441CAE523D00180D6A /* MITestRailConfiguration.m in Sources */,
 				635AF6C51CAB4809004D765B /* MITestRailSection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

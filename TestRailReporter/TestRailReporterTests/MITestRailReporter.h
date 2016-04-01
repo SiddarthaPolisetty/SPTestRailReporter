@@ -36,7 +36,7 @@
 #pragma mark - project CRUD
 - (MITestRailProject *)createProject:(MITestRailProject *)project;
 - (MITestRailProject *)updateProject:(MITestRailProject *)project;
-- (BOOL)deleteProject:(int)projectId;
+- (BOOL)deleteProjectWithId:(int)projectId;
 - (NSArray *)getAllProjects;
 - (MITestRailProject *)getProjectWithId:(int)projectId;
 @end

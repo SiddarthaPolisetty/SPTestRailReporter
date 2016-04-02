@@ -9,5 +9,24 @@
 #import "MITestRailPlanEntry.h"
 
 @implementation MITestRailPlanEntry
+#pragma mark - JSON serialize/de-serialize utils
++(JSONKeyMapper*)keyMapper
+{
+    return [[JSONKeyMapper alloc] initWithDictionary:@{
+                                                       @"id": @"planEntryId",
+                                                       @"name": @"name",
+                                                       @"suite_id": @"suiteId"
+                                                       }];
+}
 
++(BOOL)propertyIsOptional:(NSString*)propertyName
+{
+    return YES;
+}
+
+#pragma mark - description
+- (NSString *)description {
+    NSString *planEntryDescription = [self toJSONString];
+    return planEntryDescription;
+}
 @end

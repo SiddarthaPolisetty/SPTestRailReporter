@@ -12,10 +12,10 @@
 @interface MITestRailSuite : JSONModel
 @property (nonatomic, readonly) int suiteId;
 @property (nonatomic, strong) NSString *suiteName;
-@property (nonatomic, strong) NSString<Optional> *suiteDescription;
+@property (nonatomic, strong) NSString *suiteDescription;
 @property (nonatomic) int projectId;
 @property (nonatomic, strong) NSURL *suiteURL;
-@property (nonatomic, strong) NSDate<Optional> *completedOn;
+@property (nonatomic, strong) NSDate *completedOn;
 @property (nonatomic, getter=isCompleted) BOOL completed;
 @property (nonatomic, getter=isBaseline) BOOL baseline;
 @property (nonatomic, getter=isMaster) BOOL master;

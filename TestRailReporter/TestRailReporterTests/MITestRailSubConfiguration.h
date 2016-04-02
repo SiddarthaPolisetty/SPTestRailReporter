@@ -15,8 +15,8 @@
  }
  */
 @interface MITestRailSubConfiguration : JSONModel
-@property (nonatomic) int subConfigurationId;
-@property (nonatomic) int groupId;
+@property (nonatomic, readonly) int subConfigurationId;
+@property (nonatomic, readonly) int groupId;
 @property (nonatomic, strong) NSString *name;
 @end
 

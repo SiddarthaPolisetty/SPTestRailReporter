@@ -26,6 +26,11 @@
                                                        }];
 }
 
++(BOOL)propertyIsOptional:(NSString*)propertyName
+{
+    return YES;
+}
+
 #pragma mark - description
 - (NSString *)description {
     NSString *resultDescription = [self toJSONString];

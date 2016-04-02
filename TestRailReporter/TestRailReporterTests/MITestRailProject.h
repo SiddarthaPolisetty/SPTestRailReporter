@@ -20,9 +20,9 @@ typedef NS_ENUM(NSInteger, MITestRailSuiteMode) {
 
 @interface MITestRailProject : JSONModel
 @property (nonatomic, readonly) int projectId;
-@property (nonatomic, strong) NSDate<Optional> *completedOn;
+@property (nonatomic, strong) NSDate *completedOn;
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic,strong) NSString<Optional> *announcement;
+@property (nonatomic,strong) NSString *announcement;
 @property (nonatomic) BOOL showAnnouncement;
 @property (nonatomic) BOOL completed;
 @property (nonatomic) int suiteMode;

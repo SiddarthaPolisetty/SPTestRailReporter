@@ -14,14 +14,12 @@
 #import "MITestRailCase.h"
 #import "MITestRailMileStone.h"
 #import "MITestRailRun.h"
+#import "MITestRailUser.h"
 
 @interface MITestRailReporter : NSObject
 + (instancetype)sharedReporter;
 #pragma mark - run CRUD
 - (NSArray *)getAllTestRuns;
-
-#pragma mark - milestone CRUD
-- (NSArray *)getAllMileStones;
 
 #pragma mark - case CRUD
 - (NSArray *)getAllTestCases;
@@ -33,7 +31,20 @@
 - (NSArray *)getAllSuitesForProject:(int)projectId;
 - (MITestRailSuite *)getSuiteWithId:(int)suiteId;
 
-#pragma mark - project CRUD
+
+#pragma mark - Milestone CRUD
+- (MITestRailMileStone *)createMileStone:(MITestRailMileStone *)mileStone ForProjectId:(int)projectId;
+- (MITestRailMileStone *)updateMileStone:(MITestRailMileStone *)mileStone;
+- (BOOL)deleteMileStoneWithId:(int)mileStoneId;
+- (NSArray *)getAllMileStonesForProjectWithId:(int)projectId;
+- (MITestRailMileStone *)getMileStoneWithId:(int)mileStoneId;
+
+#pragma mark - User CRUD
+- (NSArray *)getAllUsers;
+- (MITestRailUser *)getUserWithId:(int)userId;
+- (MITestRailUser *)getUserWithEmail:(NSString *)email;
+
+#pragma mark - Project CRUD
 - (MITestRailProject *)createProject:(MITestRailProject *)project;
 - (MITestRailProject *)updateProject:(MITestRailProject *)project;
 - (BOOL)deleteProjectWithId:(int)projectId;

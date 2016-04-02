@@ -86,23 +86,6 @@
     return testRunsArray;
 }
 
-#pragma mark - milestone CRUD
-- (NSArray *)getAllMileStones {
-    NSMutableArray *mileStonesArray = [NSMutableArray array];
-    NSString *urlString = [NSString stringWithFormat:@"https://mobileiron.testrail.net?/api/v2/get_milestones/%d", 23];
-    NSURL *getAllMileStonesURL = [NSURL URLWithString:urlString];
-    NSArray *mileStonesResponse = (NSArray *)[self syncronousRequestWithMethod:@"GET" URL:getAllMileStonesURL Parameters:nil];
-    for (NSDictionary *dict in mileStonesResponse) {
-        NSError *error = nil;
-        MITestRailMileStone *mileStone = [[MITestRailMileStone alloc] initWithDictionary:dict error:&error];
-        if (!error) {
-            [mileStonesArray addObject:mileStone];
-        }
-    }
-    return mileStonesArray;
-
-}
-
 #pragma mark - case CRUD
 - (NSArray *)getAllTestCases {
     NSMutableArray *casesArray = [NSMutableArray array];
@@ -164,6 +147,81 @@
 - (MITestRailSuite *)getSuiteWithId:(int)suiteId {
     return nil;
 }
+
+#pragma mark - Milestone CRUD
+- (MITestRailMileStone *)createMileStone:(MITestRailMileStone *)mileStone ForProjectId:(int)projectId {
+    NSString *createMileStoneURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:[NSString stringWithFormat:@"index.php?/api/v2/add_milestone/%d", projectId]];
+    NSURL *createMileStoneURL = [NSURL URLWithString:createMileStoneURLString];
+    NSDictionary *createMileStoneURLResponse = (NSDictionary *)[self syncronousRequestWithMethod:@"POST" URL:createMileStoneURL Parameters:[mileStone toDictionary]];
+    NSError *error = nil;
+    MITestRailMileStone *createdMileStone = [[MITestRailMileStone alloc] initWithDictionary:createMileStoneURLResponse error:&error];
+    return error ? nil :createdMileStone;
+}
+
+- (MITestRailMileStone *)updateMileStone:(MITestRailMileStone *)mileStone {
+    NSString *updateMileStoneURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:[NSString stringWithFormat:@"index.php?/api/v2/update_milestone/%d", mileStone.mileStoneId]];
+    NSURL *updateMileStoneURL = [NSURL URLWithString:updateMileStoneURLString];
+    NSDictionary *updateMileStoneURLResponse = (NSDictionary *)[self syncronousRequestWithMethod:@"POST" URL:updateMileStoneURL Parameters:[mileStone toDictionary]];
+    NSError *error = nil;
+    MITestRailMileStone *updatedMileStone = [[MITestRailMileStone alloc] initWithDictionary:updateMileStoneURLResponse error:&error];
+    return error ? nil :updatedMileStone;
+}
+
+- (BOOL)deleteMileStoneWithId:(int)mileStoneId {
+    NSString *deleteMileStoneURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:[NSString stringWithFormat:@"index.php?/api/v2/delete_milestone/%d",mileStoneId]];
+    NSURL *deleteMileStoneURL = [NSURL URLWithString:deleteMileStoneURLString];
+    [self syncronousRequestWithMethod:@"POST" URL:deleteMileStoneURL Parameters:nil];
+    return YES;
+}
+
+
+- (NSArray *)getAllMileStonesForProjectWithId:(int)projectId {
+    NSString *getAllMileStonesURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:[NSString stringWithFormat:@"index.php?/api/v2/get_milestones/%d",projectId]];
+    NSURL *getAllMileStonesURL = [NSURL URLWithString:getAllMileStonesURLString];
+    NSArray *getAllMileStonesURLResponse = (NSArray *)[self syncronousRequestWithMethod:@"GET" URL:getAllMileStonesURL Parameters:nil];
+    NSError *error = nil;
+    NSArray *mileStonesArray = [MITestRailMileStone arrayOfModelsFromDictionaries:getAllMileStonesURLResponse error:&error];
+    return error ? nil :mileStonesArray;
+}
+
+- (MITestRailMileStone *)getMileStoneWithId:(int)mileStoneId {
+    NSString *getMileStoneURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:[NSString stringWithFormat:@"index.php?/api/v2/get_milestone/%d",mileStoneId]];
+    NSURL *getMileStoneURL = [NSURL URLWithString:getMileStoneURLString];
+    NSDictionary *getMileStoneURLResponse = (NSDictionary *)[self syncronousRequestWithMethod:@"GET" URL:getMileStoneURL Parameters:nil];
+    NSError *error = nil;
+    MITestRailMileStone *mileStone = [[MITestRailMileStone alloc] initWithDictionary:getMileStoneURLResponse error:&error];
+    return error ? nil :mileStone;
+}
+
+
+#pragma mark - User CRUD
+- (NSArray *)getAllUsers {
+    NSString *getAllUsersURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:@"index.php?/api/v2/get_users"];
+    NSURL *getAllProjectsURL = [NSURL URLWithString:getAllUsersURLString];
+    NSArray *getAllUsersURLResponse = (NSArray *)[self syncronousRequestWithMethod:@"GET" URL:getAllProjectsURL Parameters:nil];
+    NSError *error = nil;
+    NSArray *usersArray = [MITestRailUser arrayOfModelsFromDictionaries:getAllUsersURLResponse error:&error];
+    return error ? nil :usersArray;
+}
+
+- (MITestRailUser *)getUserWithId:(int)userId {
+    NSString *getUserURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:[NSString stringWithFormat:@"index.php?/api/v2/get_user/%d", userId]];
+    NSURL *getUserURL = [NSURL URLWithString:getUserURLString];
+    NSDictionary *getUserURLResponse = (NSDictionary *)[self syncronousRequestWithMethod:@"GET" URL:getUserURL Parameters:nil];
+    NSError *error = nil;
+    MITestRailUser *user = [[MITestRailUser alloc] initWithDictionary:getUserURLResponse error:&error];
+    return error ? nil : user;
+}
+
+- (MITestRailUser *)getUserWithEmail:(NSString *)email {
+    NSString *getUserURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:[NSString stringWithFormat:@"index.php?/api/v2/get_user_by_email&email=%@", email]];
+    NSURL *getUserURL = [NSURL URLWithString:getUserURLString];
+    NSDictionary *getUserURLResponse = (NSDictionary *)[self syncronousRequestWithMethod:@"GET" URL:getUserURL Parameters:nil];
+    NSError *error = nil;
+    MITestRailUser *user = [[MITestRailUser alloc] initWithDictionary:getUserURLResponse error:&error];
+    return error ? nil : user;
+}
+
 
 
 #pragma mark - project CRUD

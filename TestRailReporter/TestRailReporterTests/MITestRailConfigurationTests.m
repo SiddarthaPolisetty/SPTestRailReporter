@@ -18,9 +18,9 @@
 
 - (void)setUp {
     [super setUp];
-    [MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL = [NSURL URLWithString:@"https://mobileiron.testrail.net"];
-    [MITestRailConfigurationBuilder sharedConfigurationBuilder].userName = @"spolisetty@mobileiron.com";
-    [MITestRailConfigurationBuilder sharedConfigurationBuilder].password = @"Siddarth1!";
+    [MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL = [NSURL URLWithString:@"https://siddarthapolisetty.testrail.net"];
+    [MITestRailConfigurationBuilder sharedConfigurationBuilder].userName = @"siddarthpolishetty@yahoo.com";
+    [MITestRailConfigurationBuilder sharedConfigurationBuilder].password = @"Test1234!";
 }
 
 
@@ -47,26 +47,6 @@
     [[MITestRailReporter sharedReporter] deleteProjectWithId:projectB.projectId];
 }
 
-//- (void)testExample {
-//    NSArray *mileStones = [[MITestRailReporter sharedReporter] getAllMileStones];
-//    __unused NSArray *testRuns = [[MITestRailReporter sharedReporter] getAllTestRuns];
-//    __unused NSArray *testCases = [[MITestRailReporter sharedReporter] getAllTestCases];
-//   NSArray *projects = [[MITestRailReporter sharedReporter] getAllProjects];
-//    NSArray *suites = [[MITestRailReporter sharedReporter] getAllSuitesForProject:23];
-//    for (MITestRailSuite *suite in suites) {
-//        NSLog(@"%@", suite.description);
-//    }
-//    for (MITestRailProject *project in projects) {
-//        NSLog(@"%@", project.description);
-//    }
-//    for (MITestRailMileStone *mileStone in mileStones) {
-//        NSLog(@"%@", mileStone.description);
-//    }
-//    MITestRailProject *contentProject = [[MITestRailReporter sharedReporter] getProjectWithId:23];
-//    NSLog(@"%@", contentProject.description);
-//    
-//    
-//}
 
 - (void)tearDown {
     //step 1 : get all projects

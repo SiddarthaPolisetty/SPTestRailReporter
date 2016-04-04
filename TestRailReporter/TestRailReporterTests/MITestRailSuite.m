@@ -17,7 +17,7 @@
 #pragma mark - initializers
 - (instancetype)initWithName:(NSString *)name Description:(NSString *)description ProjectId:(int)projectId {
     if (self = [super init]) {
-        _suiteName = name;
+        _name = name;
         _suiteDescription= description;
         _projectId = projectId;
     }
@@ -30,7 +30,7 @@
     return [[JSONKeyMapper alloc] initWithDictionary:@{
                                                        @"description": @"suiteDescription",
                                                        @"id": @"suiteId",
-                                                       @"name": @"suiteName",
+                                                       @"name": @"name",
                                                        @"project_id": @"projectId",
                                                        @"url": @"suiteURL",
                                                        @"completed_on": @"completedOn",

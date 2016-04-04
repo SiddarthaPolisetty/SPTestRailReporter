@@ -11,7 +11,7 @@
 
 @interface MITestRailSuite : JSONModel
 @property (nonatomic, readonly) int suiteId;
-@property (nonatomic, strong) NSString *suiteName;
+@property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *suiteDescription;
 @property (nonatomic) int projectId;
 @property (nonatomic, strong) NSURL *suiteURL;

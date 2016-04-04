@@ -15,22 +15,35 @@
 #import "MITestRailMileStone.h"
 #import "MITestRailRun.h"
 #import "MITestRailUser.h"
+#import "MITestRailSection.h"
 
 @interface MITestRailReporter : NSObject
 + (instancetype)sharedReporter;
-#pragma mark - run CRUD
-- (NSArray *)getAllTestRuns;
 
 #pragma mark - case CRUD
 - (NSArray *)getAllTestCases;
 
-#pragma mark - suite CRUD
-- (MITestRailSuite *)createSuite:(MITestRailSuite *)suite;
+#pragma mark - Run CRUD
+- (NSArray *)getAllRunsForProjectId:(int)projectId;
+- (MITestRailRun *)getRunWithId:(int)runId;
+- (BOOL)closeRunWithId:(int)runId;
+- (BOOL)deleteRunWithId:(int)runId;
+- (MITestRailRun *)createRun:(MITestRailRun *)run ForProjectId:(int)projectId;
+- (MITestRailRun *)updateRun:(MITestRailRun *)run;
+
+#pragma mark - Suite CRUD
+- (MITestRailSuite *)createSuite:(MITestRailSuite *)suite ForProjectId:(int)projectId;
 - (MITestRailSuite *)updateSuite:(MITestRailSuite *)suite;
-- (BOOL)deleteSuite:(int)suiteId;
+- (BOOL)deleteSuiteWithId:(int)suiteId;
 - (NSArray *)getAllSuitesForProject:(int)projectId;
 - (MITestRailSuite *)getSuiteWithId:(int)suiteId;
 
+#pragma mark - Section CRUD
+- (MITestRailSection *)createSection:(MITestRailSection *)section ForProjectId:(int)projectId;
+- (MITestRailSection *)updateSection:(MITestRailSection *)section;
+- (BOOL)deleteSectionWithId:(int)sectionId;
+- (NSArray *)getAllSectionsForProjectWithId:(int)projectId WithSuiteId:(int)suiteId;
+- (MITestRailSection *)getSectionWithId:(int)sectionId;
 
 #pragma mark - Milestone CRUD
 - (MITestRailMileStone *)createMileStone:(MITestRailMileStone *)mileStone ForProjectId:(int)projectId;

@@ -10,7 +10,7 @@
 
 @interface MITestRailUser : JSONModel
 @property (nonatomic, strong) NSString *email;
-@property (nonatomic) int userId;
+@property (nonatomic, strong, readonly) NSNumber *userId;
 @property (nonatomic, getter=isActive) BOOL active;
 @property (nonatomic, strong) NSString *name;
 @end

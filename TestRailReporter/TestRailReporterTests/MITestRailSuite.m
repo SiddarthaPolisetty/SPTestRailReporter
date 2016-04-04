@@ -9,13 +9,13 @@
 #import "MITestRailSuite.h"
 
 @interface MITestRailSuite ()
-@property (nonatomic, readwrite) int suiteId;
+@property (nonatomic, strong, readwrite) NSNumber *suiteId;
 @end
 
 @implementation MITestRailSuite
 
 #pragma mark - initializers
-- (instancetype)initWithName:(NSString *)name Description:(NSString *)description ProjectId:(int)projectId {
+- (instancetype)initWithName:(NSString *)name Description:(NSString *)description ProjectId:(NSNumber *)projectId {
     if (self = [super init]) {
         _name = name;
         _suiteDescription= description;

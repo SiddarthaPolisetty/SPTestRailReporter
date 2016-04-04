@@ -10,16 +10,16 @@
 #import "MITestRailPlanEntry.h"
 
 @interface MITestRailPlan : JSONModel
-@property (nonatomic) int assignedToId;
-@property (nonatomic) int blockedCount;
-@property (nonatomic) int createdById;
-@property (nonatomic) int failedCount;
-@property (nonatomic) int planId;
-@property (nonatomic) int milestoneId;
-@property (nonatomic) int passedCount;
-@property (nonatomic) int projectId;
-@property (nonatomic) int retestCount;
-@property (nonatomic) int untestedCount;
+@property (nonatomic, strong) NSNumber *assignedToId;
+@property (nonatomic, strong) NSNumber *blockedCount;
+@property (nonatomic, strong) NSNumber *createdById;
+@property (nonatomic, strong) NSNumber *failedCount;
+@property (nonatomic, strong, readonly) NSNumber *planId;
+@property (nonatomic, strong) NSNumber *milestoneId;
+@property (nonatomic, strong) NSNumber *passedCount;
+@property (nonatomic, strong) NSNumber *projectId;
+@property (nonatomic, strong) NSNumber *retestCount;
+@property (nonatomic, strong) NSNumber *untestedCount;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *planDescription;
 @property (nonatomic, strong) NSURL *planURL;

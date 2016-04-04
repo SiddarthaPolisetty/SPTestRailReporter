@@ -12,9 +12,9 @@
 @property (nonatomic, strong) NSDate<Optional> *completedOn;
 @property (nonatomic, strong) NSString *mileStoneDescription;
 @property (nonatomic, strong) NSDate<Optional> *dueOn;
-@property (nonatomic) int mileStoneId;
+@property (nonatomic, strong, readonly) NSNumber *mileStoneId;
 @property (nonatomic, getter=isComlpeted) BOOL completed;
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic) int projectId;
+@property (nonatomic, strong) NSNumber *projectId;
 @property (nonatomic, strong) NSURL *mileStoneURL;
 @end

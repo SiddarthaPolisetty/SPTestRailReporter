@@ -10,14 +10,14 @@
 #import "MITestRailCustomStep.h"
 
 @interface MITestRailCase : JSONModel
-@property (nonatomic) int createdByUserId;
-@property (nonatomic) int updatedByUserId;
-@property (nonatomic) int caseId;
-@property (nonatomic) int milestoneId;
-@property (nonatomic) int priorityId;
-@property (nonatomic) int sectionId;
-@property (nonatomic) int suiteId;
-@property (nonatomic) int typeId;
+@property (nonatomic, strong) NSNumber *createdByUserId;
+@property (nonatomic, strong) NSNumber *updatedByUserId;
+@property (nonatomic, strong, readonly) NSNumber *caseId;
+@property (nonatomic, strong) NSNumber *milestoneId;
+@property (nonatomic, strong) NSNumber *priorityId;
+@property (nonatomic, strong) NSNumber *sectionId;
+@property (nonatomic, strong) NSNumber *suiteId;
+@property (nonatomic, strong) NSNumber *typeId;
 @property (nonatomic, strong) NSDate *createdOn;
 @property (nonatomic, strong) NSString *customExpected;
 @property (nonatomic, strong) NSString *customPreconds;

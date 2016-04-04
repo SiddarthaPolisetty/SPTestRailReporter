@@ -11,7 +11,7 @@
 #import "MITestRailConfigurationBuilder.h"
 
 @interface MITestRailSuiteTests : XCTestCase
-@property (nonatomic) int createdProjectId;
+@property (nonatomic, strong) NSNumber *createdProjectId;
 @end
 
 @implementation MITestRailSuiteTests
@@ -40,7 +40,7 @@
         [[MITestRailReporter sharedReporter] updateSuite:suite];
     }
     //step 4 : fetch a suite by id
-    int suiteId = [(MITestRailSuite *)[suites firstObject] suiteId];
+    NSNumber *suiteId = [(MITestRailSuite *)[suites firstObject] suiteId];
     MITestRailSuite *fetchedSuite = [[MITestRailReporter sharedReporter] getSuiteWithId:suiteId];
     //step 5 : delete a particular suite
     [[MITestRailReporter sharedReporter] deleteSuiteWithId:fetchedSuite.suiteId];

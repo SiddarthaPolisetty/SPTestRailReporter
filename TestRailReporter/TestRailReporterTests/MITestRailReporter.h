@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AFNetworking/AFNetworking.h>
+#import "MITestRailConfigurationBuilder.h"
 #import "MITestRailProject.h"
 #import "MITestRailSuite.h"
 #import "MITestRailProject.h"
@@ -16,51 +17,78 @@
 #import "MITestRailRun.h"
 #import "MITestRailUser.h"
 #import "MITestRailSection.h"
+#import "MITestRailPlan.h"
+#import "MITestRailConfigGroup.h"
 
 @interface MITestRailReporter : NSObject
 + (instancetype)sharedReporter;
 
-#pragma mark - case CRUD
-- (NSArray *)getAllTestCases;
+#pragma mark - Case CRUD
+- (MITestRailCase *)getCaseWithId:(NSNumber *)caseId;
+- (NSArray *)getAllCasesForProjectId:(NSNumber *)projectId WithSectionId:(NSNumber *)sectionId WithSuiteId:(NSNumber *)suiteId;
+- (MITestRailCase *)createCase:(MITestRailCase *)testCase WithSectionId:(NSNumber *)sectionId;
+- (MITestRailCase *)updateCase:(MITestRailCase *)testCase;
+- (BOOL)deleteCaseWithId:(NSNumber *)caseId;
+
+
+#pragma mark - Configuration CRUD
+- (NSArray *)getAllConfigGroupsForProjectId:(NSNumber *)projectId;
+- (BOOL)deleteConfigWithId:(NSNumber *)configId;
+- (BOOL)deleteConfigGroupWithId:(NSNumber *)configGroupId;
+- (MITestRailConfig *)createConfig:(MITestRailConfig *)config InConfigGroupId:(NSNumber *)configGroupId;
+- (MITestRailConfigGroup *)createConfigGroup:(MITestRailConfigGroup *)configGroup InProjectId:(NSNumber *)projectId;
+- (MITestRailConfig *)updateConfig:(MITestRailConfig *)config;
+- (MITestRailConfigGroup *)updateConfigurationGroup:(MITestRailConfigGroup *)configGroup;
+
+#pragma mark - Plan CRUD
+- (NSArray *)getAllPlansForProjectId:(NSNumber *)projectId;
+- (MITestRailPlan *)getPlanWithId:(NSNumber *)planId;
+- (BOOL)closePlanWithId:(NSNumber *)planId;
+- (BOOL)deletePlanWithId:(NSNumber *)planId;
+- (MITestRailPlan *)createPlan:(MITestRailPlan *)plan ForProjectId:(NSNumber *)projectId;
+- (MITestRailPlan *)updatePlan:(MITestRailPlan *)plan;
+- (MITestRailPlanEntry *)createPlanEntry:(MITestRailPlanEntry *)entry InPlanId:(NSNumber *)planId;
+- (MITestRailPlanEntry *)updatePlanEntry:(MITestRailPlanEntry *)entry InPlanId:(NSNumber *)planId;
+- (BOOL)deletePLanEntryWithEntryId:(NSString *)entryId InPlanId:(NSNumber *)planId;
 
 #pragma mark - Run CRUD
-- (NSArray *)getAllRunsForProjectId:(int)projectId;
-- (MITestRailRun *)getRunWithId:(int)runId;
-- (BOOL)closeRunWithId:(int)runId;
-- (BOOL)deleteRunWithId:(int)runId;
-- (MITestRailRun *)createRun:(MITestRailRun *)run ForProjectId:(int)projectId;
+- (NSArray *)getAllRunsForProjectId:(NSNumber *)projectId;
+- (MITestRailRun *)getRunWithId:(NSNumber *)runId;
+- (BOOL)closeRunWithId:(NSNumber *)runId;
+- (BOOL)deleteRunWithId:(NSNumber *)runId;
+- (MITestRailRun *)createRun:(MITestRailRun *)run ForProjectId:(NSNumber *)projectId;
 - (MITestRailRun *)updateRun:(MITestRailRun *)run;
 
 #pragma mark - Suite CRUD
-- (MITestRailSuite *)createSuite:(MITestRailSuite *)suite ForProjectId:(int)projectId;
+- (MITestRailSuite *)createSuite:(MITestRailSuite *)suite ForProjectId:(NSNumber *)projectId;
 - (MITestRailSuite *)updateSuite:(MITestRailSuite *)suite;
-- (BOOL)deleteSuiteWithId:(int)suiteId;
-- (NSArray *)getAllSuitesForProject:(int)projectId;
-- (MITestRailSuite *)getSuiteWithId:(int)suiteId;
+- (BOOL)deleteSuiteWithId:(NSNumber *)suiteId;
+- (NSArray *)getAllSuitesForProject:(NSNumber *)projectId;
+- (MITestRailSuite *)getSuiteWithId:(NSNumber *)suiteId;
 
 #pragma mark - Section CRUD
-- (MITestRailSection *)createSection:(MITestRailSection *)section ForProjectId:(int)projectId;
+- (MITestRailSection *)createSection:(MITestRailSection *)section ForProjectId:(NSNumber *)projectId;
 - (MITestRailSection *)updateSection:(MITestRailSection *)section;
-- (BOOL)deleteSectionWithId:(int)sectionId;
-- (NSArray *)getAllSectionsForProjectWithId:(int)projectId WithSuiteId:(int)suiteId;
-- (MITestRailSection *)getSectionWithId:(int)sectionId;
+- (BOOL)deleteSectionWithId:(NSNumber *)sectionId;
+- (NSArray *)getAllSectionsForProjectWithId:(NSNumber *)projectId WithSuiteId:(NSNumber *)suiteId;
+- (MITestRailSection *)getSectionWithId:(NSNumber *)sectionId;
 
 #pragma mark - Milestone CRUD
-- (MITestRailMileStone *)createMileStone:(MITestRailMileStone *)mileStone ForProjectId:(int)projectId;
+- (MITestRailMileStone *)createMileStone:(MITestRailMileStone *)mileStone ForProjectId:(NSNumber *)projectId;
 - (MITestRailMileStone *)updateMileStone:(MITestRailMileStone *)mileStone;
-- (BOOL)deleteMileStoneWithId:(int)mileStoneId;
-- (NSArray *)getAllMileStonesForProjectWithId:(int)projectId;
-- (MITestRailMileStone *)getMileStoneWithId:(int)mileStoneId;
+- (BOOL)deleteMileStoneWithId:(NSNumber *)mileStoneId;
+- (NSArray *)getAllMileStonesForProjectWithId:(NSNumber *)projectId;
+- (MITestRailMileStone *)getMileStoneWithId:(NSNumber *)mileStoneId;
 
 #pragma mark - User CRUD
 - (NSArray *)getAllUsers;
-- (MITestRailUser *)getUserWithId:(int)userId;
+- (MITestRailUser *)getUserWithId:(NSNumber *)userId;
 - (MITestRailUser *)getUserWithEmail:(NSString *)email;
 
 #pragma mark - Project CRUD
 - (MITestRailProject *)createProject:(MITestRailProject *)project;
 - (MITestRailProject *)updateProject:(MITestRailProject *)project;
-- (BOOL)deleteProjectWithId:(int)projectId;
+- (BOOL)deleteProjectWithId:(NSNumber *)projectId;
 - (NSArray *)getAllProjects;
-- (MITestRailProject *)getProjectWithId:(int)projectId;
+- (MITestRailProject *)getProjectWithId:(NSNumber *)projectId;
 @end

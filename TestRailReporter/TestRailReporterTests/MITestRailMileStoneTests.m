@@ -11,7 +11,7 @@
 #import "MITestRailConfigurationBuilder.h"
 
 @interface MITestRailMileStoneTests : XCTestCase
-@property (nonatomic) int createdProjectId;
+@property (nonatomic, strong) NSNumber *createdProjectId;
 @end
 
 @implementation MITestRailMileStoneTests
@@ -43,7 +43,7 @@
         [[MITestRailReporter sharedReporter] updateMileStone:mileStone];
     }
     //step 4 : fetch milestone by Id
-    int mileStoneId = [(MITestRailMileStone *)[mileStones firstObject] mileStoneId];
+    NSNumber *mileStoneId = [(MITestRailMileStone *)[mileStones firstObject] mileStoneId];
     MITestRailMileStone *fetchedMileStone = [[MITestRailReporter sharedReporter] getMileStoneWithId:mileStoneId];
     //step 5 : delete milestone
     [[MITestRailReporter sharedReporter] deleteMileStoneWithId:fetchedMileStone.mileStoneId];

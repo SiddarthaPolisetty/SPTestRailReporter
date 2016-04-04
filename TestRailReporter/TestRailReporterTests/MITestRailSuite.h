@@ -10,14 +10,14 @@
 #import "JSONModel.h"
 
 @interface MITestRailSuite : JSONModel
-@property (nonatomic, readonly) int suiteId;
+@property (nonatomic, strong, readonly) NSNumber *suiteId;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *suiteDescription;
-@property (nonatomic) int projectId;
+@property (nonatomic, strong) NSNumber *projectId;
 @property (nonatomic, strong) NSURL *suiteURL;
 @property (nonatomic, strong) NSDate *completedOn;
 @property (nonatomic, getter=isCompleted) BOOL completed;
 @property (nonatomic, getter=isBaseline) BOOL baseline;
 @property (nonatomic, getter=isMaster) BOOL master;
-- (instancetype)initWithName:(NSString *)name Description:(NSString *)description ProjectId:(int)projectId;
+- (instancetype)initWithName:(NSString *)name Description:(NSString *)description ProjectId:(NSNumber *)projectId;
 @end

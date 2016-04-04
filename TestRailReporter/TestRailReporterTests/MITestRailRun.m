@@ -7,6 +7,11 @@
 //
 
 #import "MITestRailRun.h"
+
+@interface MITestRailRun ()
+@property (nonatomic, strong, readwrite) NSNumber *runId;
+@end
+
 @implementation MITestRailRun
 #pragma mark - JSON serialize/de-serialize utils
 +(JSONKeyMapper*)keyMapper
@@ -32,7 +37,8 @@
                                                        @"completed_on" : @"completedOn",
                                                        @"created_on" : @"createdOn",
                                                        @"url" : @"runURL",
-                                                       @"config_ids" : @"configIds"
+                                                       @"config_ids" : @"configIds",
+                                                       @"case_ids" : @"caseIds"
                                                        }];
 }
 

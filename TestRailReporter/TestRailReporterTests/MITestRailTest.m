@@ -7,37 +7,11 @@
 //
 
 #import "MITestRailTest.h"
-/*
- @property (nonatomic) int assignedToId;
- @property (nonatomic) int caseId;
- @property (nonatomic) int testId;
- @property (nonatomic) int priorityId;
- @property (nonatomic) int runId;
- @property (nonatomic) int statusId;
- @property (nonatomic) int typeId;
- @property (nonatomic, strong) NSString *customExpected;
- @property (nonatomic, strong) NSString *customPreconds;
- @property (nonatomic, strong) NSString *estimate;
- @property (nonatomic, strong) NSString *estimateForecast;
- @property (nonatomic, strong) NSString *title;
- @property (nonatomic, strong) NSArray<MITestRailCustomStep> *customStepsSeparated;
- 
- {
-	@"assignedto_id": @"",
-	@"case_id": @"",
-	@"custom_expected": @"",
-	@"custom_preconds": @"",
-	@"custom_steps_separated": @"",
-	@"estimate": @"",
-	@"estimate_forecast": @"",
-	@"id": @"",
-	@"priority_id": @"",
-	@"run_id": @"",
-	@"status_id": @"",
-	@"title": @"",
-	@"type_id": @""
- }
- */
+
+@interface MITestRailTest ()
+@property (nonatomic, strong, readwrite) NSNumber *testId;
+@end
+
 @implementation MITestRailTest
 +(JSONKeyMapper*)keyMapper
 {

@@ -8,6 +8,10 @@
 
 #import "MITestRailCase.h"
 
+@interface MITestRailCase ()
+@property (nonatomic, strong, readwrite) NSNumber *caseId;
+@end
+
 @implementation MITestRailCase
 #pragma mark - JSON serialize/de-serialize utils
 +(JSONKeyMapper*)keyMapper

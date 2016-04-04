@@ -19,13 +19,13 @@ typedef NS_ENUM(NSInteger, MITestRailSuiteMode) {
 };
 
 @interface MITestRailProject : JSONModel
-@property (nonatomic, readonly) int projectId;
+@property (nonatomic, strong, readonly) NSNumber *projectId;
 @property (nonatomic, strong) NSDate *completedOn;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic,strong) NSString *announcement;
 @property (nonatomic) BOOL showAnnouncement;
 @property (nonatomic) BOOL completed;
-@property (nonatomic) int suiteMode;
+@property (nonatomic) NSInteger suiteMode;
 @property (nonatomic , strong, readonly) NSURL *projectURL;
 
 - (instancetype)initWithName:(NSString *)name Announcement:(NSString *)announcement Mode:(MITestRailSuiteMode)suiteMode;

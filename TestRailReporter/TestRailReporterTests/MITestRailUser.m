@@ -8,6 +8,10 @@
 
 #import "MITestRailUser.h"
 
+@interface MITestRailUser ()
+@property (nonatomic, strong, readwrite) NSNumber *userId;
+@end
+
 @implementation MITestRailUser
 #pragma mark - JSON serialize/de-serialize utils
 +(JSONKeyMapper*)keyMapper

@@ -1,20 +1,24 @@
 //
-//  MITestRailConfiguration.m
+//  MITestRailConfigGroup.m
 //  TestRailReporter
 //
 //  Created by Siddartha Polisetty on 3/31/16.
 //  Copyright © 2016 Sid Inc. All rights reserved.
 //
 
-#import "MITestRailConfiguration.h"
+#import "MITestRailConfigGroup.h"
 
-@implementation MITestRailConfiguration
+@interface MITestRailConfigGroup ()
+@property (nonatomic, strong, readwrite) NSNumber *configGroupId;
+@end
+
+@implementation MITestRailConfigGroup
 #pragma mark - JSON serialize/de-serialize utils
 +(JSONKeyMapper*)keyMapper
 {
     return [[JSONKeyMapper alloc] initWithDictionary:@{
                                                        @"configs":@"configurationsSeperated",
-                                                       @"id": @"configurationId",
+                                                       @"id": @"configGroupId",
                                                        @"name": @"name",
                                                        @"project_id": @"projectId"
                                                        }];

@@ -10,9 +10,9 @@
 #import "MITestRailRun.h"
 
 @interface MITestRailPlanEntry : JSONModel
-@property (nonatomic, strong) NSString *planEntryId;
+@property (nonatomic, strong, readonly) NSString *planEntryId;
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic) int suiteId;
+@property (nonatomic, strong) NSNumber *suiteId;
 @property (nonatomic, strong) NSArray<MITestRailRun> *runs;
 @end
 

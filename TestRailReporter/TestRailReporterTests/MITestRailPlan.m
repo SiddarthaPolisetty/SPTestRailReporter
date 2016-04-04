@@ -8,6 +8,10 @@
 
 #import "MITestRailPlan.h"
 
+@interface MITestRailPlan ()
+@property (nonatomic, strong, readwrite) NSNumber *planId;
+@end
+
 @implementation MITestRailPlan
 #pragma mark - JSON serialize/de-serialize utils
 +(JSONKeyMapper*)keyMapper

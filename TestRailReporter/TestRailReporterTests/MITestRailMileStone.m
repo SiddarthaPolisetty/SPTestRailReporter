@@ -7,6 +7,11 @@
 //
 
 #import "MITestRailMileStone.h"
+
+@interface MITestRailMileStone ()
+@property (nonatomic, strong, readwrite) NSNumber *mileStoneId;
+@end
+
 @implementation MITestRailMileStone
 #pragma mark - JSON serialize/de-serialize utils
 +(JSONKeyMapper*)keyMapper

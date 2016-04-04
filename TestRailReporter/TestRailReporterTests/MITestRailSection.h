@@ -9,11 +9,11 @@
 #import <JSONModel/JSONModel.h>
 
 @interface MITestRailSection : JSONModel
-@property (nonatomic) int depth;
+@property (nonatomic, strong) NSNumber *depth;
 @property (nonatomic, strong) NSString *sectionDescription;
-@property (nonatomic) int displayOrder;
-@property (nonatomic) int sectionId;
+@property (nonatomic, strong) NSNumber *displayOrder;
+@property (nonatomic, strong, readonly) NSNumber *sectionId;
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic) int parentId;
-@property (nonatomic) int suiteId;
+@property (nonatomic, strong) NSNumber *parentId;
+@property (nonatomic, strong) NSNumber *suiteId;
 @end

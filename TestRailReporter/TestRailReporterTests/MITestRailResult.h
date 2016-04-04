@@ -9,11 +9,11 @@
 #import <JSONModel/JSONModel.h>
 
 @interface MITestRailResult : JSONModel
-@property (nonatomic) int resultId;
-@property (nonatomic) int assignedToId;
-@property (nonatomic) int createdById;
-@property (nonatomic) int testId;
-@property (nonatomic) int statusId;
+@property (nonatomic, strong, readonly) NSNumber *resultId;
+@property (nonatomic, strong) NSNumber *assignedToId;
+@property (nonatomic, strong) NSNumber *createdById;
+@property (nonatomic, strong) NSNumber *testId;
+@property (nonatomic, strong) NSNumber *statusId;
 @property (nonatomic, strong) NSString *defects;
 @property (nonatomic, strong) NSString *comment;
 @property (nonatomic, strong) NSString *elapsed;

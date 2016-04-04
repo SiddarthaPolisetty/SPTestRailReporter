@@ -11,9 +11,9 @@
 #import "MITestRailConfigurationBuilder.h"
 
 @interface MITestRailTestRunTests : XCTestCase
-@property (nonatomic) int createdProjectId;
-@property (nonatomic) int createdSuiteId;
-@property (nonatomic) int createdMileStoneId;
+@property (nonatomic, strong) NSNumber *createdProjectId;
+@property (nonatomic, strong) NSNumber *createdSuiteId;
+@property (nonatomic, strong) NSNumber *createdMileStoneId;
 @end
 
 @implementation MITestRailTestRunTests
@@ -54,7 +54,7 @@
         [[MITestRailReporter sharedReporter] updateRun:run];
     }
     //step 4 : fetch a test run by id
-    int runId = [(MITestRailRun *)[runs firstObject] runId];
+    NSNumber *runId = [(MITestRailRun *)[runs firstObject] runId];
     MITestRailRun *fetchedRun = [[MITestRailReporter sharedReporter] getRunWithId:runId];
     //step 5 : delete a particular test run
     [[MITestRailReporter sharedReporter] deleteRunWithId:fetchedRun.runId];

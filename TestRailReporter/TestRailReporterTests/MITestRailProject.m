@@ -9,7 +9,7 @@
 #import "MITestRailProject.h"
 
 @interface MITestRailProject ()
-@property (nonatomic, readwrite) int projectId;
+@property (nonatomic, strong, readwrite) NSNumber *projectId;
 @property (nonatomic , strong, readwrite) NSURL *projectURL;
 @end
 

@@ -11,8 +11,8 @@
 #import "MITestRailConfigurationBuilder.h"
 
 @interface MITestRailSectionTests : XCTestCase
-@property (nonatomic) int createdProjectId;
-@property (nonatomic) int createdSuiteId;
+@property (nonatomic, strong) NSNumber *createdProjectId;
+@property (nonatomic, strong) NSNumber *createdSuiteId;
 @end
 
 @implementation MITestRailSectionTests
@@ -47,7 +47,7 @@
         [[MITestRailReporter sharedReporter] updateSection:section];
     }
     //step 4 : fetch a section by id
-    int sectionId = [(MITestRailSection *)[sections firstObject] sectionId];
+    NSNumber *sectionId = [(MITestRailSection *)[sections firstObject] sectionId];
     MITestRailSection *fetchedSection = [[MITestRailReporter sharedReporter] getSectionWithId:sectionId];
     //step 5 : delete a particular section
     [[MITestRailReporter sharedReporter] deleteSectionWithId:fetchedSection.sectionId];

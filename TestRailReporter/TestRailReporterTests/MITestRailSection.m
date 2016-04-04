@@ -8,6 +8,10 @@
 
 #import "MITestRailSection.h"
 
+@interface MITestRailSection ()
+@property (nonatomic, strong, readwrite) NSNumber *sectionId;
+@end
+
 @implementation MITestRailSection
 #pragma mark - JSON serialize/de-serialize utils
 +(JSONKeyMapper*)keyMapper

@@ -9,18 +9,18 @@
 #import <JSONModel/JSONModel.h>
 
 @interface MITestRailRun : JSONModel
-@property (nonatomic) int runId;
-@property (nonatomic) int suiteId;
-@property (nonatomic) int projectId;
-@property (nonatomic) int failedCount;
-@property (nonatomic) int retestCount;
-@property (nonatomic) int untestedCount;
-@property (nonatomic) int blockedCount;
-@property (nonatomic) int passedCount;
-@property (nonatomic) int planId;
-@property (nonatomic) int assignedToId;
-@property (nonatomic) int mileStoneId;
-@property (nonatomic) int createdById;
+@property (nonatomic, strong, readonly) NSNumber *runId;
+@property (nonatomic, strong) NSNumber *suiteId;
+@property (nonatomic, strong) NSNumber *projectId;
+@property (nonatomic, strong) NSNumber *failedCount;
+@property (nonatomic, strong) NSNumber *retestCount;
+@property (nonatomic, strong) NSNumber *untestedCount;
+@property (nonatomic, strong) NSNumber *blockedCount;
+@property (nonatomic, strong) NSNumber *passedCount;
+@property (nonatomic, strong) NSNumber *planId;
+@property (nonatomic, strong) NSNumber *assignedToId;
+@property (nonatomic, strong) NSNumber *mileStoneId;
+@property (nonatomic, strong) NSNumber *createdById;
 @property (nonatomic) BOOL includeAll;
 @property (nonatomic, getter=isCompleted) BOOL completed;
 @property (nonatomic, strong) NSString *name;
@@ -30,6 +30,7 @@
 @property (nonatomic, strong) NSDate *createdOn;
 @property (nonatomic, strong) NSURL *runURL;
 @property (nonatomic, strong) NSArray *configIds;
+@property (nonatomic, strong) NSArray *caseIds;
 @end
 
 @protocol MITestRailRun

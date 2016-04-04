@@ -65,6 +65,97 @@
     return reponseJSON;
 }
 
+#pragma mark - Result CRUD
+- (NSArray *)getAllResultsforTestId:(NSNumber *)testId {
+    NSString *getAllResultsURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:[NSString stringWithFormat:@"index.php?/api/v2/get_results/%@", testId]];
+    NSURL *getAllResultsURL = [NSURL URLWithString:getAllResultsURLString];
+    NSArray *getAllResultsURLResponse = (NSArray *)[self syncronousRequestWithMethod:@"GET" URL:getAllResultsURL Parameters:nil];
+    NSError *error = nil;
+    NSArray *resultsArray = [MITestRailTest arrayOfModelsFromDictionaries:getAllResultsURLResponse error:&error];
+    return error ? nil : resultsArray;
+}
+
+- (NSArray *)getAllResultsforCaseId:(NSNumber *)caseId ForRunId:(NSNumber *)runId {
+    NSString *getAllResultsURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:[NSString stringWithFormat:@"index.php?/api/v2/get_results_for_case/%@/%@", runId, caseId]];
+    NSURL *getAllResultsURL = [NSURL URLWithString:getAllResultsURLString];
+    NSArray *getAllResultsURLResponse = (NSArray *)[self syncronousRequestWithMethod:@"GET" URL:getAllResultsURL Parameters:nil];
+    NSError *error = nil;
+    NSArray *resultsArray = [MITestRailTest arrayOfModelsFromDictionaries:getAllResultsURLResponse error:&error];
+    return error ? nil : resultsArray;
+}
+
+- (NSArray *)getAllResultsforRunId:(NSNumber *)runId {
+    NSString *getAllResultsURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:[NSString stringWithFormat:@"index.php?/api/v2/get_results_for_run/%@", runId]];
+    NSURL *getAllResultsURL = [NSURL URLWithString:getAllResultsURLString];
+    NSArray *getAllResultsURLResponse = (NSArray *)[self syncronousRequestWithMethod:@"GET" URL:getAllResultsURL Parameters:nil];
+    NSError *error = nil;
+    NSArray *resultsArray = [MITestRailTest arrayOfModelsFromDictionaries:getAllResultsURLResponse error:&error];
+    return error ? nil : resultsArray;
+}
+
+- (MITestRailResult *)addResult:(MITestRailResult *)result ForTestId:(NSNumber *)testId {
+    NSString *addResultURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:[NSString stringWithFormat:@"index.php?/api/v2/add_result/%@", testId]];
+    NSURL *addResultURL = [NSURL URLWithString:addResultURLString];
+    NSDictionary *addResultURLResponse = (NSDictionary *)[self syncronousRequestWithMethod:@"POST" URL:addResultURL Parameters:[result toDictionary]];
+    NSError *error = nil;
+    MITestRailResult *addedResult = [[MITestRailResult alloc] initWithDictionary:addResultURLResponse error:&error];
+    return error ? nil : addedResult;
+}
+- (MITestRailResult *)addResult:(MITestRailResult *)result ForRunId:(NSNumber *)runId ForCaseId:(NSNumber *)caseId {
+    NSString *addResultURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:[NSString stringWithFormat:@"index.php?/api/v2/add_result_for_case/%@/%@", runId, caseId]];
+    NSURL *addResultURL = [NSURL URLWithString:addResultURLString];
+    NSDictionary *addResultURLResponse = (NSDictionary *)[self syncronousRequestWithMethod:@"POST" URL:addResultURL Parameters:[result toDictionary]];
+    NSError *error = nil;
+    MITestRailResult *addedResult = [[MITestRailResult alloc] initWithDictionary:addResultURLResponse error:&error];
+    return error ? nil : addedResult;
+}
+
+- (NSDictionary *)resultDictionaryFromResults:(NSArray *)results {
+    NSMutableDictionary *resultsDictionary = [NSMutableDictionary dictionary];
+    NSMutableArray *arrayOfResults = [NSMutableArray array];
+    for (MITestRailResult *result in results) {
+        [arrayOfResults addObject:result.toDictionary];
+    }
+    resultsDictionary[@"results"] = arrayOfResults;
+    return [resultsDictionary copy];
+}
+
+- (NSArray *)addResults:(NSArray *)testResults ForRunId:(NSNumber *)runId {
+    NSString *addResultsURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:[NSString stringWithFormat:@"index.php?/api/v2/add_results/%@", runId]];
+    NSURL *addResultsURL = [NSURL URLWithString:addResultsURLString];
+    NSArray *addResultsURLResponse = (NSArray *)[self syncronousRequestWithMethod:@"POST" URL:addResultsURL Parameters:[self resultDictionaryFromResults:testResults]];
+    NSError *error = nil;
+    NSArray *resultsArray = [MITestRailResult arrayOfModelsFromDictionaries:addResultsURLResponse error:&error];
+    return error ? nil : resultsArray;
+}
+
+- (NSArray *)addResultsForCases:(NSArray *)testResults ForRunId:(NSNumber *)runId {
+    NSString *addResultsURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:[NSString stringWithFormat:@"index.php?/api/v2/add_results_for_cases/%@", runId]];
+    NSURL *addResultsURL = [NSURL URLWithString:addResultsURLString];
+    NSArray *addResultsURLResponse = (NSArray *)[self syncronousRequestWithMethod:@"POST" URL:addResultsURL Parameters:[self resultDictionaryFromResults:testResults]];
+    NSError *error = nil;
+    NSArray *resultsArray = [MITestRailResult arrayOfModelsFromDictionaries:addResultsURLResponse error:&error];
+    return error ? nil : resultsArray;
+}
+
+#pragma mark - Test CRUD
+- (MITestRailTest *)getTestWithId:(NSNumber *)testId {
+    NSString *getTestURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:[NSString stringWithFormat:@"index.php?/api/v2/get_test/%@", testId]];
+    NSURL *getTestURL = [NSURL URLWithString:getTestURLString];
+    NSDictionary *getTestURLResponse = (NSDictionary *)[self syncronousRequestWithMethod:@"GET" URL:getTestURL Parameters:nil];
+    NSError *error = nil;
+    MITestRailTest *fetchedTest= [[MITestRailTest alloc] initWithDictionary:getTestURLResponse error:&error];
+    return error ? nil : fetchedTest;
+}
+
+- (NSArray *)getAllTestsWithRunId:(NSNumber *)runId {
+    NSString *getAllTestsURLString = [[MITestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL.absoluteString stringByAppendingPathComponent:[NSString stringWithFormat:@"index.php?/api/v2/get_tests/%@", runId]];
+    NSURL *getAllTestsURL = [NSURL URLWithString:getAllTestsURLString];
+    NSArray *getAllTestsURLResponse = (NSArray *)[self syncronousRequestWithMethod:@"GET" URL:getAllTestsURL Parameters:nil];
+    NSError *error = nil;
+    NSArray *testsArray = [MITestRailTest arrayOfModelsFromDictionaries:getAllTestsURLResponse error:&error];
+    return error ? nil : testsArray;
+}
 
 #pragma mark - Case CRUD
 - (MITestRailCase *)getCaseWithId:(NSNumber *)caseId {

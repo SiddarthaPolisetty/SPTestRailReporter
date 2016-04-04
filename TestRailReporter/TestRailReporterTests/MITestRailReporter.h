@@ -19,9 +19,25 @@
 #import "MITestRailSection.h"
 #import "MITestRailPlan.h"
 #import "MITestRailConfigGroup.h"
+#import "MITestRailTest.h"
+#import "MITestRailResult.h"
 
 @interface MITestRailReporter : NSObject
 + (instancetype)sharedReporter;
+
+#pragma mark - Result CRUD
+- (NSArray *)getAllResultsforTestId:(NSNumber *)testId;
+- (NSArray *)getAllResultsforCaseId:(NSNumber *)caseId;
+- (NSArray *)getAllResultsforRunId:(NSNumber *)runId;
+- (MITestRailResult *)addResult:(MITestRailResult *)result ForTestId:(NSNumber *)testId;
+- (MITestRailResult *)addResult:(MITestRailResult *)result ForRunId:(NSNumber *)runId ForCaseId:(NSNumber *)caseId;
+- (NSArray *)addResults:(NSArray *)testResults ForRunId:(NSNumber *)runId;
+- (NSArray *)addResultsForCases:(NSArray *)testResults ForRunId:(NSNumber *)runId;
+
+
+#pragma mark - Test CRUD
+- (MITestRailTest *)getTestWithId:(NSNumber *)testId;
+- (NSArray *)getAllTestsWithRunId:(NSNumber *)runId;
 
 #pragma mark - Case CRUD
 - (MITestRailCase *)getCaseWithId:(NSNumber *)caseId;
@@ -29,7 +45,6 @@
 - (MITestRailCase *)createCase:(MITestRailCase *)testCase WithSectionId:(NSNumber *)sectionId;
 - (MITestRailCase *)updateCase:(MITestRailCase *)testCase;
 - (BOOL)deleteCaseWithId:(NSNumber *)caseId;
-
 
 #pragma mark - Configuration CRUD
 - (NSArray *)getAllConfigGroupsForProjectId:(NSNumber *)projectId;

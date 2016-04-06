@@ -24,17 +24,18 @@
 }
 
 - (void)testUsersAPI {
+    NSError *error = nil;
     //step 1 : get all users
-    NSArray *users = [[MITestRailReporter sharedReporter] getAllUsers];
+    NSArray *users = [[MITestRailReporter sharedReporter] getAllUsersError:&error];
     for (MITestRailUser *user in users) {
         NSLog(@"%@", user);
     }
     //step 2 : get user by id
     MITestRailUser *user = [users firstObject];
-    MITestRailUser *userById = [[MITestRailReporter sharedReporter] getUserWithId:user.userId];
+    MITestRailUser *userById = [[MITestRailReporter sharedReporter] getUserWithId:user.userId Error:&error];
     XCTAssertTrue(user.userId == userById.userId, @"Mismatch");
     //step 3 : get user by email
-    MITestRailUser *userByEmail = [[MITestRailReporter sharedReporter] getUserWithEmail:user.email];
+    MITestRailUser *userByEmail = [[MITestRailReporter sharedReporter] getUserWithEmail:user.email Error:&error];
     XCTAssertTrue(user.userId == userByEmail.userId, @"Mismatch");
 }
 @end

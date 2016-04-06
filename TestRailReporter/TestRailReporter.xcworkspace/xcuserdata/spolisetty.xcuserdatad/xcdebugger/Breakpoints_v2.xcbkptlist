@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TestRailReporterTests/MITestRailReporter.m"
-            timestampString = "481505147.328554"
+            timestampString = "481582725.292893"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
-            landmarkName = "-resultDictionaryFromResults:"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "-addResult:ForRunId:ForCaseId:Error:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

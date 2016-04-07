@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SPAppDelegate.h
 //  SPTestRailReporter
 //
 //  Created by Siddartha Polisetty on 3/22/16.
@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SPAppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
 
 
 @end

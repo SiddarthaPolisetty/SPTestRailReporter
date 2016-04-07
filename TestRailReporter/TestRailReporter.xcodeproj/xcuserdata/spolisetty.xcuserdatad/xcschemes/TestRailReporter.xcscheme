@@ -37,6 +37,17 @@
                BlueprintName = "TestRailReporterTests"
                ReferencedContainer = "container:TestRailReporter.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "MITestRailResultTests">
+               </Test>
+               <Test
+                  Identifier = "MITestRailTestAndResultTests">
+               </Test>
+               <Test
+                  Identifier = "SPTestRailTestAndResultTests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>

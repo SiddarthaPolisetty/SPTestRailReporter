@@ -39,7 +39,34 @@
             </BuildableReference>
             <SkippedTests>
                <Test
+                  Identifier = "SPTestRailCaseTests">
+               </Test>
+               <Test
+                  Identifier = "SPTestRailConfigTests">
+               </Test>
+               <Test
+                  Identifier = "SPTestRailPlanTests">
+               </Test>
+               <Test
+                  Identifier = "SPTestRailProjectTests">
+               </Test>
+               <Test
+                  Identifier = "SPTestRailSectionTests">
+               </Test>
+               <Test
+                  Identifier = "SPTestRailSuiteTests">
+               </Test>
+               <Test
                   Identifier = "SPTestRailTestAndResultTests">
+               </Test>
+               <Test
+                  Identifier = "SPTestRailTestAndResultTests">
+               </Test>
+               <Test
+                  Identifier = "SPTestRailTestRunTests">
+               </Test>
+               <Test
+                  Identifier = "SPTestRailUserTests">
                </Test>
             </SkippedTests>
          </TestableReference>

@@ -1,5 +1,5 @@
 # **SPTestRailReporter**
-**SPTestRailReporter** is the missing iOS Framework that automagically performs TestRail Reporting.
+**SPTestRailReporter** is the missing iOS Framework that automagically performs [TestRail](http://www.gurock.com/testrail/) Reporting.
 
 ## What is TestRail
 Modern Test Case Management Software for QA and Development Teams

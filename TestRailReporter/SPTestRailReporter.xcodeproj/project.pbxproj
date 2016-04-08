@@ -60,7 +60,7 @@
 		6302243C1CB2E3DC000CD20D /* SPTestRailPlanTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailPlanTests.m; sourceTree = "<group>"; };
 		6302243E1CB309F1000CD20D /* SPTestRailCaseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailCaseTests.m; sourceTree = "<group>"; };
 		630224421CB32BAD000CD20D /* SPTestRailTestAndResultTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailTestAndResultTests.m; sourceTree = "<group>"; };
-		631372421CA225A500B89E89 /* TestRailReporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestRailReporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		631372421CA225A500B89E89 /* SPTestRailReporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPTestRailReporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		631372461CA225A500B89E89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		631372481CA225A500B89E89 /* SPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAppDelegate.h; sourceTree = "<group>"; };
 		631372491CA225A500B89E89 /* SPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAppDelegate.m; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		631372511CA225A500B89E89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		631372541CA225A500B89E89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		631372561CA225A500B89E89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6313725B1CA225A500B89E89 /* TestRailReporterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestRailReporterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6313725B1CA225A500B89E89 /* SPTestRailReporter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPTestRailReporter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6313725F1CA225A500B89E89 /* SPTestRailProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPTestRailProjectTests.m; sourceTree = "<group>"; };
 		631372611CA225A500B89E89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6313726A1CA225D700B89E89 /* SPTestRailProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTestRailProject.h; sourceTree = "<group>"; };
@@ -153,8 +153,8 @@
 		631372391CA225A500B89E89 = {
 			isa = PBXGroup;
 			children = (
-				631372441CA225A500B89E89 /* TestRailReporter */,
-				6313725E1CA225A500B89E89 /* TestRailReporterTests */,
+				631372441CA225A500B89E89 /* SPTestRailReporter */,
+				6313725E1CA225A500B89E89 /* SPTestRailReporterTests */,
 				631372431CA225A500B89E89 /* Products */,
 				44BE56831C362930BC943936 /* Pods */,
 				CDA5E532015B5E9F2B132884 /* Frameworks */,
@@ -164,13 +164,13 @@
 		631372431CA225A500B89E89 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				631372421CA225A500B89E89 /* TestRailReporter.app */,
-				6313725B1CA225A500B89E89 /* TestRailReporterTests.xctest */,
+				631372421CA225A500B89E89 /* SPTestRailReporter.app */,
+				6313725B1CA225A500B89E89 /* SPTestRailReporter.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		631372441CA225A500B89E89 /* TestRailReporter */ = {
+		631372441CA225A500B89E89 /* SPTestRailReporter */ = {
 			isa = PBXGroup;
 			children = (
 				631372481CA225A500B89E89 /* SPAppDelegate.h */,
@@ -183,6 +183,7 @@
 				631372561CA225A500B89E89 /* Info.plist */,
 				631372451CA225A500B89E89 /* Supporting Files */,
 			);
+			name = SPTestRailReporter;
 			path = TestRailReporter;
 			sourceTree = "<group>";
 		};
@@ -194,7 +195,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6313725E1CA225A500B89E89 /* TestRailReporterTests */ = {
+		6313725E1CA225A500B89E89 /* SPTestRailReporterTests */ = {
 			isa = PBXGroup;
 			children = (
 				6330EB3E1CAE4C0F00180D6A /* Utils */,
@@ -203,6 +204,7 @@
 				6326B16B1CA4B73B0086EFA6 /* Model */,
 				6330EB3F1CAE4C2F00180D6A /* Resources */,
 			);
+			name = SPTestRailReporterTests;
 			path = TestRailReporterTests;
 			sourceTree = "<group>";
 		};
@@ -298,9 +300,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		631372411CA225A500B89E89 /* TestRailReporter */ = {
+		631372411CA225A500B89E89 /* SPTestRailReporter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 631372641CA225A500B89E89 /* Build configuration list for PBXNativeTarget "TestRailReporter" */;
+			buildConfigurationList = 631372641CA225A500B89E89 /* Build configuration list for PBXNativeTarget "SPTestRailReporter" */;
 			buildPhases = (
 				ADC5DBDEA2D1F5E73E2C516C /* 📦 Check Pods Manifest.lock */,
 				6313723E1CA225A500B89E89 /* Sources */,
@@ -313,14 +315,14 @@
 			);
 			dependencies = (
 			);
-			name = TestRailReporter;
+			name = SPTestRailReporter;
 			productName = TestRailReporter;
-			productReference = 631372421CA225A500B89E89 /* TestRailReporter.app */;
+			productReference = 631372421CA225A500B89E89 /* SPTestRailReporter.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6313725A1CA225A500B89E89 /* TestRailReporterTests */ = {
+		6313725A1CA225A500B89E89 /* SPTestRailReporterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 631372671CA225A500B89E89 /* Build configuration list for PBXNativeTarget "TestRailReporterTests" */;
+			buildConfigurationList = 631372671CA225A500B89E89 /* Build configuration list for PBXNativeTarget "SPTestRailReporterTests" */;
 			buildPhases = (
 				6730431546DD2EEE5614E1C2 /* 📦 Check Pods Manifest.lock */,
 				631372571CA225A500B89E89 /* Sources */,
@@ -334,9 +336,9 @@
 			dependencies = (
 				6313725D1CA225A500B89E89 /* PBXTargetDependency */,
 			);
-			name = TestRailReporterTests;
+			name = SPTestRailReporterTests;
 			productName = TestRailReporterTests;
-			productReference = 6313725B1CA225A500B89E89 /* TestRailReporterTests.xctest */;
+			productReference = 6313725B1CA225A500B89E89 /* SPTestRailReporter.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -346,7 +348,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "Sid Inc.";
+				ORGANIZATIONNAME = "Siddartha Polisetty";
 				TargetAttributes = {
 					631372411CA225A500B89E89 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -357,7 +359,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6313723D1CA225A500B89E89 /* Build configuration list for PBXProject "TestRailReporter" */;
+			buildConfigurationList = 6313723D1CA225A500B89E89 /* Build configuration list for PBXProject "SPTestRailReporter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -370,8 +372,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				631372411CA225A500B89E89 /* TestRailReporter */,
-				6313725A1CA225A500B89E89 /* TestRailReporterTests */,
+				631372411CA225A500B89E89 /* SPTestRailReporter */,
+				6313725A1CA225A500B89E89 /* SPTestRailReporterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -539,7 +541,7 @@
 /* Begin PBXTargetDependency section */
 		6313725D1CA225A500B89E89 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 631372411CA225A500B89E89 /* TestRailReporter */;
+			target = 631372411CA225A500B89E89 /* SPTestRailReporter */;
 			targetProxy = 6313725C1CA225A500B89E89 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -652,9 +654,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestRailReporter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.siddarthapolisetty.TestRailReporter;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddarthapolisetty.SPTestRailReporter;
+				PRODUCT_NAME = SPTestRailReporter;
 			};
 			name = Debug;
 		};
@@ -664,9 +667,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestRailReporter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.siddarthapolisetty.TestRailReporter;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.siddarthapolisetty.SPTestRailReporter;
+				PRODUCT_NAME = SPTestRailReporter;
 			};
 			name = Release;
 		};
@@ -678,8 +682,8 @@
 				INFOPLIST_FILE = TestRailReporterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.siddarthapolisetty.TestRailReporterTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestRailReporter.app/TestRailReporter";
+				PRODUCT_NAME = SPTestRailReporter;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPTestRailReporter.app/SPTestRailReporter";
 			};
 			name = Debug;
 		};
@@ -691,15 +695,15 @@
 				INFOPLIST_FILE = TestRailReporterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.siddarthapolisetty.TestRailReporterTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestRailReporter.app/TestRailReporter";
+				PRODUCT_NAME = SPTestRailReporter;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPTestRailReporter.app/SPTestRailReporter";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6313723D1CA225A500B89E89 /* Build configuration list for PBXProject "TestRailReporter" */ = {
+		6313723D1CA225A500B89E89 /* Build configuration list for PBXProject "SPTestRailReporter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				631372621CA225A500B89E89 /* Debug */,
@@ -708,7 +712,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		631372641CA225A500B89E89 /* Build configuration list for PBXNativeTarget "TestRailReporter" */ = {
+		631372641CA225A500B89E89 /* Build configuration list for PBXNativeTarget "SPTestRailReporter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				631372651CA225A500B89E89 /* Debug */,
@@ -717,7 +721,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		631372671CA225A500B89E89 /* Build configuration list for PBXNativeTarget "TestRailReporterTests" */ = {
+		631372671CA225A500B89E89 /* Build configuration list for PBXNativeTarget "SPTestRailReporterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				631372681CA225A500B89E89 /* Debug */,

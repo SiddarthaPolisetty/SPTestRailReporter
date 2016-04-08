@@ -14,7 +14,6 @@
 		6313724A1CA225A500B89E89 /* SPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 631372491CA225A500B89E89 /* SPAppDelegate.m */; };
 		6313724D1CA225A500B89E89 /* SPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313724C1CA225A500B89E89 /* SPViewController.m */; };
 		631372521CA225A500B89E89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631372511CA225A500B89E89 /* Assets.xcassets */; };
-		631372551CA225A500B89E89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631372531CA225A500B89E89 /* LaunchScreen.storyboard */; };
 		631372601CA225A500B89E89 /* SPTestRailProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313725F1CA225A500B89E89 /* SPTestRailProjectTests.m */; };
 		6313726E1CA225D700B89E89 /* SPTestRailProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313726B1CA225D700B89E89 /* SPTestRailProject.m */; };
 		6313726F1CA225D700B89E89 /* SPTestRailReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313726D1CA225D700B89E89 /* SPTestRailReporter.m */; };
@@ -65,7 +64,6 @@
 		6313724B1CA225A500B89E89 /* SPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPViewController.h; sourceTree = "<group>"; };
 		6313724C1CA225A500B89E89 /* SPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPViewController.m; sourceTree = "<group>"; };
 		631372511CA225A500B89E89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		631372541CA225A500B89E89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		631372561CA225A500B89E89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6313725B1CA225A500B89E89 /* SPTestRailReporter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPTestRailReporter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6313725F1CA225A500B89E89 /* SPTestRailProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPTestRailProjectTests.m; sourceTree = "<group>"; };
@@ -175,7 +173,6 @@
 				6313724B1CA225A500B89E89 /* SPViewController.h */,
 				6313724C1CA225A500B89E89 /* SPViewController.m */,
 				631372511CA225A500B89E89 /* Assets.xcassets */,
-				631372531CA225A500B89E89 /* LaunchScreen.storyboard */,
 				631372561CA225A500B89E89 /* Info.plist */,
 				631372451CA225A500B89E89 /* Supporting Files */,
 			);
@@ -380,7 +377,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				631372551CA225A500B89E89 /* LaunchScreen.storyboard in Resources */,
 				631372521CA225A500B89E89 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,17 +537,6 @@
 			targetProxy = 6313725C1CA225A500B89E89 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		631372531CA225A500B89E89 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				631372541CA225A500B89E89 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		631372621CA225A500B89E89 /* Debug */ = {

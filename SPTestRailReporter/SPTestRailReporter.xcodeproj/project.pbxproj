@@ -13,8 +13,7 @@
 		630224431CB32BAD000CD20D /* SPTestRailTestAndResultTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 630224421CB32BAD000CD20D /* SPTestRailTestAndResultTests.m */; };
 		631372471CA225A500B89E89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 631372461CA225A500B89E89 /* main.m */; };
 		6313724A1CA225A500B89E89 /* SPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 631372491CA225A500B89E89 /* SPAppDelegate.m */; };
-		6313724D1CA225A500B89E89 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313724C1CA225A500B89E89 /* ViewController.m */; };
-		631372501CA225A500B89E89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6313724E1CA225A500B89E89 /* Main.storyboard */; };
+		6313724D1CA225A500B89E89 /* SPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313724C1CA225A500B89E89 /* SPViewController.m */; };
 		631372521CA225A500B89E89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631372511CA225A500B89E89 /* Assets.xcassets */; };
 		631372551CA225A500B89E89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631372531CA225A500B89E89 /* LaunchScreen.storyboard */; };
 		631372601CA225A500B89E89 /* SPTestRailProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313725F1CA225A500B89E89 /* SPTestRailProjectTests.m */; };
@@ -62,9 +61,8 @@
 		631372461CA225A500B89E89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		631372481CA225A500B89E89 /* SPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAppDelegate.h; sourceTree = "<group>"; };
 		631372491CA225A500B89E89 /* SPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAppDelegate.m; sourceTree = "<group>"; };
-		6313724B1CA225A500B89E89 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6313724C1CA225A500B89E89 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6313724F1CA225A500B89E89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6313724B1CA225A500B89E89 /* SPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPViewController.h; sourceTree = "<group>"; };
+		6313724C1CA225A500B89E89 /* SPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPViewController.m; sourceTree = "<group>"; };
 		631372511CA225A500B89E89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		631372541CA225A500B89E89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		631372561CA225A500B89E89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -174,9 +172,8 @@
 			children = (
 				631372481CA225A500B89E89 /* SPAppDelegate.h */,
 				631372491CA225A500B89E89 /* SPAppDelegate.m */,
-				6313724B1CA225A500B89E89 /* ViewController.h */,
-				6313724C1CA225A500B89E89 /* ViewController.m */,
-				6313724E1CA225A500B89E89 /* Main.storyboard */,
+				6313724B1CA225A500B89E89 /* SPViewController.h */,
+				6313724C1CA225A500B89E89 /* SPViewController.m */,
 				631372511CA225A500B89E89 /* Assets.xcassets */,
 				631372531CA225A500B89E89 /* LaunchScreen.storyboard */,
 				631372561CA225A500B89E89 /* Info.plist */,
@@ -385,7 +382,6 @@
 			files = (
 				631372551CA225A500B89E89 /* LaunchScreen.storyboard in Resources */,
 				631372521CA225A500B89E89 /* Assets.xcassets in Resources */,
-				631372501CA225A500B89E89 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,7 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6313724D1CA225A500B89E89 /* ViewController.m in Sources */,
+				6313724D1CA225A500B89E89 /* SPViewController.m in Sources */,
 				6313724A1CA225A500B89E89 /* SPAppDelegate.m in Sources */,
 				631372471CA225A500B89E89 /* main.m in Sources */,
 			);
@@ -547,14 +543,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6313724E1CA225A500B89E89 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6313724F1CA225A500B89E89 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		631372531CA225A500B89E89 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

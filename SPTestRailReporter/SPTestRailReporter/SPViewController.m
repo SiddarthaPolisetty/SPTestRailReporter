@@ -1,5 +1,5 @@
 //
-//  ViewController.m
+//  SPViewController.m
 //  SPTestRailReporter
 //
 //  Created by Siddartha Polisetty on 3/22/16.
@@ -24,13 +24,13 @@
 //  SOFTWARE.
 //
 
-#import "ViewController.h"
+#import "SPViewController.h"
 
-@interface ViewController ()
+@interface SPViewController ()
 
 @end
 
-@implementation ViewController
+@implementation SPViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

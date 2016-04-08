@@ -1,5 +1,5 @@
-# **SPTestRailReporter**
 ![Build Status](https://travis-ci.com/SiddarthaPolisetty/SPTestRailReporter.svg?token=gvbx8gBcsPpfM9guFszy&branch=master)
+# **SPTestRailReporter**
 **SPTestRailReporter** is the missing iOS Framework that automagically performs [TestRail](http://www.gurock.com/testrail/) Reporting.
 
 ## What is TestRail

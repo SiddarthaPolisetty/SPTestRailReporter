@@ -1,0 +1,7 @@
+ # file: .travis.yml
+language: objective-c
+script:
+  - brew update
+ - brew install xctool
+  - xctool -workspace SPTestRailReporter/SPTestRailReporter.xcworkspace -scheme SPTestRailReporter -sdk iphonesimulator
+  - xctool -workspace SPTestRailReporter/SPTestRailReporter.xcworkspace -scheme SPTestRailReporter -sdk iphonesimulator test

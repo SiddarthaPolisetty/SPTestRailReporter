@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		060BA58093BFB7312E3C820F /* libPods-SPTestRailReporter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C83092000EF88B248598A7D7 /* libPods-SPTestRailReporter.a */; };
 		6302243D1CB2E3DC000CD20D /* SPTestRailPlanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6302243C1CB2E3DC000CD20D /* SPTestRailPlanTests.m */; };
 		6302243F1CB309F1000CD20D /* SPTestRailCaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6302243E1CB309F1000CD20D /* SPTestRailCaseTests.m */; };
 		630224431CB32BAD000CD20D /* SPTestRailTestAndResultTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 630224421CB32BAD000CD20D /* SPTestRailTestAndResultTests.m */; };
@@ -40,7 +39,8 @@
 		637D622E1CB2388B00ECAEA7 /* SPTestRailSuiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 637D622D1CB2388B00ECAEA7 /* SPTestRailSuiteTests.m */; };
 		637D62301CB2421700ECAEA7 /* SPTestRailTestRunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 637D622F1CB2421700ECAEA7 /* SPTestRailTestRunTests.m */; };
 		63B8EE851CAE554E00A7C8D5 /* SPTestRailConfigTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B8EE841CAE554E00A7C8D5 /* SPTestRailConfigTests.m */; };
-		946F7F7DD0DF6351DC7185D1 /* libPods-SPTestRailReporterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B468904B7765326365EED9BB /* libPods-SPTestRailReporterTests.a */; };
+		93D46A663AE2EED8BCC0CABA /* Pods_SPTestRailReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFF0B77C3C118FA0131F684 /* Pods_SPTestRailReporter.framework */; };
+		FCEA496C31E4590DE8FE9DA9 /* Pods_SPTestRailReporterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCC1E7B1B1AD70ADCEB6FA0 /* Pods_SPTestRailReporterTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3FFF0B77C3C118FA0131F684 /* Pods_SPTestRailReporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPTestRailReporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6302243C1CB2E3DC000CD20D /* SPTestRailPlanTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailPlanTests.m; sourceTree = "<group>"; };
 		6302243E1CB309F1000CD20D /* SPTestRailCaseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailCaseTests.m; sourceTree = "<group>"; };
 		630224421CB32BAD000CD20D /* SPTestRailTestAndResultTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailTestAndResultTests.m; sourceTree = "<group>"; };
@@ -112,8 +113,7 @@
 		63B8EE841CAE554E00A7C8D5 /* SPTestRailConfigTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailConfigTests.m; sourceTree = "<group>"; };
 		7C51AB35650B3C75B06295A2 /* Pods-SPTestRailReporter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPTestRailReporter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPTestRailReporter/Pods-SPTestRailReporter.debug.xcconfig"; sourceTree = "<group>"; };
 		901E6ECE8B7596D47D9F0D04 /* Pods-SPTestRailReporterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPTestRailReporterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPTestRailReporterTests/Pods-SPTestRailReporterTests.release.xcconfig"; sourceTree = "<group>"; };
-		B468904B7765326365EED9BB /* libPods-SPTestRailReporterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SPTestRailReporterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C83092000EF88B248598A7D7 /* libPods-SPTestRailReporter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SPTestRailReporter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADCC1E7B1B1AD70ADCEB6FA0 /* Pods_SPTestRailReporterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPTestRailReporterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB81424E045DEC07A1A534A5 /* Pods-SPTestRailReporterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPTestRailReporterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPTestRailReporterTests/Pods-SPTestRailReporterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FDE030F0B4783A1F3EB1F531 /* Pods-SPTestRailReporter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPTestRailReporter.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPTestRailReporter/Pods-SPTestRailReporter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,7 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				060BA58093BFB7312E3C820F /* libPods-SPTestRailReporter.a in Frameworks */,
+				93D46A663AE2EED8BCC0CABA /* Pods_SPTestRailReporter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				946F7F7DD0DF6351DC7185D1 /* libPods-SPTestRailReporterTests.a in Frameworks */,
+				FCEA496C31E4590DE8FE9DA9 /* Pods_SPTestRailReporterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +141,8 @@
 		4F192FE3D14121976A0C9B73 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C83092000EF88B248598A7D7 /* libPods-SPTestRailReporter.a */,
-				B468904B7765326365EED9BB /* libPods-SPTestRailReporterTests.a */,
+				3FFF0B77C3C118FA0131F684 /* Pods_SPTestRailReporter.framework */,
+				ADCC1E7B1B1AD70ADCEB6FA0 /* Pods_SPTestRailReporterTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

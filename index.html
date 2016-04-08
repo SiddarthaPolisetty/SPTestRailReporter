@@ -19,28 +19,126 @@
     </section>
 
     <section class="main-content">
-      <h3>
-<a id="welcome-to-sptestrailreporter" class="anchor" href="#welcome-to-sptestrailreporter" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to SPTestRailReporter.</h3>
+      <h1>
+<a id="sptestrailreporter" class="anchor" href="#sptestrailreporter" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>SPTestRailReporter</strong>
+</h1>
 
-<p>iOS Library that automagically performs TestRail Reporting.</p>
+<p><strong>SPTestRailReporter</strong> is the missing iOS Framework that automagically performs TestRail Reporting.</p>
 
-<h3>
-<a id="using-sptestrailreporter" class="anchor" href="#using-sptestrailreporter" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using SPTestRailReporter</h3>
+<h2>
+<a id="what-is-testrail" class="anchor" href="#what-is-testrail" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is TestRail</h2>
 
-<p>add Usage Info</p>
+<p>Modern Test Case Management Software for QA and Development Teams</p>
 
-<h3>
-<a id="code-samples" class="anchor" href="#code-samples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Code Samples</h3>
+<ul>
+<li>Efficiently manage test cases, plans and runs.</li>
+<li>Boost testing productivity significantly.</li>
+<li>Get real-time insights into your testing progress.</li>
+<li>Integrates with your issue tracker &amp; test automation.</li>
+</ul>
 
-<p>Sample to be added</p>
+<h2>
+<a id="how-to-integrate-sptestrailreporter-into-your-project" class="anchor" href="#how-to-integrate-sptestrailreporter-into-your-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to integrate SPTestRailReporter into your project</h2>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<ul>
+<li>At present we have this <a href="https://github.com/SiddarthaPolisetty/SPTestRailReporter">SPTestRailReporter</a> Repository. You can download and start building cool stuff.</li>
+<li>We are busy building more features and eventually create a pod to easily plug and play :)</li>
+</ul>
+
+<h2>
+<a id="using-sptestrailreporter" class="anchor" href="#using-sptestrailreporter" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using SPTestRailReporter</h2>
+
+<p><strong>SPTestRailReporter</strong> performs almost all CRUD operations on all entities supported by TestRail api v2. The following methods provide an overview of SPTestRailReporter's interface.</p>
+
+<div class="highlight highlight-source-objc"><pre><span class="pl-c">//Result CRUD</span>
+- (<span class="pl-c1">NSArray</span> *)getAllResultsforTestId:(<span class="pl-c1">NSNumber</span> *)testId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-c1">NSArray</span> *)getAllResultsforCaseId:(<span class="pl-c1">NSNumber</span> *)caseId ForRunId:(<span class="pl-c1">NSNumber</span> *)runId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-c1">NSArray</span> *)getAllResultsforRunId:(<span class="pl-c1">NSNumber</span> *)runId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailResult *)addResult:(SPTestRailResult *)result ForTestId:(<span class="pl-c1">NSNumber</span> *)testId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailResult *)addResult:(SPTestRailResult *)result ForRunId:(<span class="pl-c1">NSNumber</span> *)runId ForCaseId:(<span class="pl-c1">NSNumber</span> *)caseId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-c1">NSArray</span> *)addResults:(<span class="pl-c1">NSArray</span> *)testResults ForRunId:(<span class="pl-c1">NSNumber</span> *)runId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-c1">NSArray</span> *)addResultsForCases:(<span class="pl-c1">NSArray</span> *)testResults ForRunId:(<span class="pl-c1">NSNumber</span> *)runId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+
+
+<span class="pl-c">//Test CRUD</span>
+- (SPTestRailTest *)getTestWithId:(<span class="pl-c1">NSNumber</span> *)testId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-c1">NSArray</span> *)getAllTestsWithRunId:(<span class="pl-c1">NSNumber</span> *)runId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+
+<span class="pl-c">//Case CRUD</span>
+- (SPTestRailCase *)getCaseWithId:(<span class="pl-c1">NSNumber</span> *)caseId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-c1">NSArray</span> *)getAllCasesForProjectId:(<span class="pl-c1">NSNumber</span> *)projectId WithSectionId:(<span class="pl-c1">NSNumber</span> *)sectionId WithSuiteId:(<span class="pl-c1">NSNumber</span> *)suiteId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailCase *)addCase:(SPTestRailCase *)testCase WithSectionId:(<span class="pl-c1">NSNumber</span> *)sectionId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailCase *)updateCase:(SPTestRailCase *)testCase Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-k">BOOL</span>)deleteCaseWithId:(<span class="pl-c1">NSNumber</span> *)caseId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+
+<span class="pl-c">//Configs and ConfigGroup CRUD</span>
+- (<span class="pl-c1">NSArray</span> *)getAllConfigGroupsForProjectId:(<span class="pl-c1">NSNumber</span> *)projectId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-k">BOOL</span>)deleteConfigWithId:(<span class="pl-c1">NSNumber</span> *)configId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-k">BOOL</span>)deleteConfigGroupWithId:(<span class="pl-c1">NSNumber</span> *)configGroupId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailConfig *)addConfig:(SPTestRailConfig *)config InConfigGroupId:(<span class="pl-c1">NSNumber</span> *)configGroupId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailConfigGroup *)addConfigGroup:(SPTestRailConfigGroup *)configGroup InProjectId:(<span class="pl-c1">NSNumber</span> *)projectId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailConfig *)updateConfig:(SPTestRailConfig *)config Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailConfigGroup *)updateConfigurationGroup:(SPTestRailConfigGroup *)configGroup Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+
+<span class="pl-c">//Plan CRUD</span>
+- (<span class="pl-c1">NSArray</span> *)getAllPlansForProjectId:(<span class="pl-c1">NSNumber</span> *)projectId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailPlan *)getPlanWithId:(<span class="pl-c1">NSNumber</span> *)planId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-k">BOOL</span>)closePlanWithId:(<span class="pl-c1">NSNumber</span> *)planId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-k">BOOL</span>)deletePlanWithId:(<span class="pl-c1">NSNumber</span> *)planId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailPlan *)addPlan:(SPTestRailPlan *)plan ForProjectId:(<span class="pl-c1">NSNumber</span> *)projectId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailPlan *)updatePlan:(SPTestRailPlan *)plan Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailPlanEntry *)addPlanEntry:(SPTestRailPlanEntry *)entry InPlanId:(<span class="pl-c1">NSNumber</span> *)planId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailPlanEntry *)updatePlanEntry:(SPTestRailPlanEntry *)entry InPlanId:(<span class="pl-c1">NSNumber</span> *)planId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-k">BOOL</span>)deletePLanEntryWithEntryId:(<span class="pl-c1">NSString</span> *)entryId InPlanId:(<span class="pl-c1">NSNumber</span> *)planId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+
+<span class="pl-c">//Run CRUD</span>
+- (<span class="pl-c1">NSArray</span> *)getAllRunsForProjectId:(<span class="pl-c1">NSNumber</span> *)projectId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailRun *)getRunWithId:(<span class="pl-c1">NSNumber</span> *)runId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-k">BOOL</span>)closeRunWithId:(<span class="pl-c1">NSNumber</span> *)runId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-k">BOOL</span>)deleteRunWithId:(<span class="pl-c1">NSNumber</span> *)runId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailRun *)addRun:(SPTestRailRun *)run ForProjectId:(<span class="pl-c1">NSNumber</span> *)projectId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailRun *)updateRun:(SPTestRailRun *)run Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+
+<span class="pl-c">//Suite CRUD</span>
+- (SPTestRailSuite *)addSuite:(SPTestRailSuite *)suite ForProjectId:(<span class="pl-c1">NSNumber</span> *)projectId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailSuite *)updateSuite:(SPTestRailSuite *)suite Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-k">BOOL</span>)deleteSuiteWithId:(<span class="pl-c1">NSNumber</span> *)suiteId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-c1">NSArray</span> *)getAllSuitesForProject:(<span class="pl-c1">NSNumber</span> *)projectId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailSuite *)getSuiteWithId:(<span class="pl-c1">NSNumber</span> *)suiteId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+
+<span class="pl-c">//Section CRUD</span>
+- (SPTestRailSection *)addSection:(SPTestRailSection *)section ForProjectId:(<span class="pl-c1">NSNumber</span> *)projectId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailSection *)updateSection:(SPTestRailSection *)section Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-k">BOOL</span>)deleteSectionWithId:(<span class="pl-c1">NSNumber</span> *)sectionId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-c1">NSArray</span> *)getAllSectionsForProjectWithId:(<span class="pl-c1">NSNumber</span> *)projectId WithSuiteId:(<span class="pl-c1">NSNumber</span> *)suiteId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailSection *)getSectionWithId:(<span class="pl-c1">NSNumber</span> *)sectionId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+
+<span class="pl-c">//Milestone CRUD</span>
+- (SPTestRailMileStone *)addMileStone:(SPTestRailMileStone *)mileStone ForProjectId:(<span class="pl-c1">NSNumber</span> *)projectId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailMileStone *)updateMileStone:(SPTestRailMileStone *)mileStone Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-k">BOOL</span>)deleteMileStoneWithId:(<span class="pl-c1">NSNumber</span> *)mileStoneId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-c1">NSArray</span> *)getAllMileStonesForProjectWithId:(<span class="pl-c1">NSNumber</span> *)projectId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailMileStone *)getMileStoneWithId:(<span class="pl-c1">NSNumber</span> *)mileStoneId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+
+<span class="pl-c">//User CRUD</span>
+- (<span class="pl-c1">NSArray</span> *)getAllUsersError:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailUser *)getUserWithId:(<span class="pl-c1">NSNumber</span> *)userId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailUser *)getUserWithEmail:(<span class="pl-c1">NSString</span> *)email Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+
+<span class="pl-c">//Project CRUD</span>
+- (SPTestRailProject *)addProject:(SPTestRailProject *)project Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailProject *)updateProject:(SPTestRailProject *)project Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-k">BOOL</span>)deleteProjectWithId:(<span class="pl-c1">NSNumber</span> *)projectId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (<span class="pl-c1">NSArray</span> *)getAllProjectsError:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
+- (SPTestRailProject *)getProjectWithId:(<span class="pl-c1">NSNumber</span> *)projectId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;</pre></div>
+
+<h2>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h2>
 
 <p>Created with love by <a href="https://github.com/SiddarthaPolisetty" class="user-mention">@SiddarthaPolisetty</a>. </p>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+<h2>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h2>
 
 <p>Please Create an issue and assign it to <a href="https://github.com/SiddarthaPolisetty" class="user-mention">@SiddarthaPolisetty</a>.</p>
 

@@ -1,6 +1,6 @@
  # file: .travis.yml
 before_install:
-  - sudo gem install cocoapods
+  - gem install cocoapods
   - brew update
   - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
 language: objective-c

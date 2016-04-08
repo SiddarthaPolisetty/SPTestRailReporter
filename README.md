@@ -14,7 +14,25 @@ Modern Test Case Management Software for QA and Development Teams
 - We are busy building more features and eventually create a pod to easily plug and play :)
 
 ## Using SPTestRailReporter
-**SPTestRailReporter** performs almost all CRUD operations on all entities supported by TestRail api v2. The following methods provide an overview of SPTestRailReporter's interface.
+**SPTestRailReporter** performs almost all CRUD operations on all entities supported by TestRail api v2. The following documentation helps you onboard SPTestRailReporter.
+
+- Headers Required
+```objective-c
+#import "SPTestRailReporter.h"
+#import "SPTestRailConfigurationBuilder.h"
+```
+
+- Configure to Point to your TestRail instance, provide credentials for accessing the api's.
+```objective-c
+[SPTestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL = [NSURL URLWithString:@"<yourtestrailurl>"];
+[SPTestRailConfigurationBuilder sharedConfigurationBuilder].userName = @"<yourtestrailemail>";
+[SPTestRailConfigurationBuilder sharedConfigurationBuilder].password = @"<yourtestrailpassword>";
+```
+- Initialize SPTestRailReporter
+```objective-c
+[SPTestRailReporter sharedReporter]
+```
+- Now, that you have SPTestRailProvider's singleton instance, you are all set to play with the following API interfaces.
 
 ```objective-c
 //Result CRUD
@@ -99,6 +117,9 @@ Modern Test Case Management Software for QA and Development Teams
 - (NSArray *)getAllProjectsError:(NSError *__autoreleasing *)error;
 - (SPTestRailProject *)getProjectWithId:(NSNumber *)projectId Error:(NSError *__autoreleasing *)error;
 ```
+
+## TestRail API Reference
+More Information on model schema, usage information and common error codes can be found here [API V2](http://docs.gurock.com/testrail-api2/start) 
 
 ## Authors and Contributors
 Created with love by @SiddarthaPolisetty. 

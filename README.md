@@ -1,6 +1,6 @@
-![Build Status](https://travis-ci.com/SiddarthaPolisetty/SPTestRailReporter.svg?token=gvbx8gBcsPpfM9guFszy&branch=master)
+[![Build Status](https://travis-ci.com/SiddarthaPolisetty/SPTestRailReporter.svg?token=gvbx8gBcsPpfM9guFszy&branch=master)](https://travis-ci.com/SiddarthaPolisetty/SPTestRailReporter)
 # **SPTestRailReporter**
-**SPTestRailReporter** is the missing iOS Framework that automagically performs [TestRail](http://www.gurock.com/testrail/) Reporting.
+**[SPTestRailReporter](http://siddarthapolisetty.github.io/SPTestRailReporter/)** is the missing iOS Framework that automagically performs [TestRail](http://www.gurock.com/testrail/) Reporting.
 
 ## What is TestRail
 Modern Test Case Management Software for QA and Development Teams
@@ -17,10 +17,10 @@ Modern Test Case Management Software for QA and Development Teams
 **SPTestRailReporter** performs almost all CRUD operations on all entities supported by TestRail api v2. The following documentation helps you onboard SPTestRailReporter.
 
 - Headers Required
-```objective-c
-#import "SPTestRailReporter.h"
-#import "SPTestRailConfigurationBuilder.h"
-```
+    ```objective-c
+    #import "SPTestRailReporter.h"
+    #import "SPTestRailConfigurationBuilder.h"
+    ```
 
 - Configure to Point to your TestRail instance, provide credentials for accessing the api's.
     ```objective-c

@@ -1,5 +1,5 @@
 //
-//  SPTestRailReporter.m
+//  SPTestRailReporterExample.m
 //  DocsAtWork
 //
 //  added by Siddartha Polisetty on 3/22/16.

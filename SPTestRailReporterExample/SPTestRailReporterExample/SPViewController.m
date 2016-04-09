@@ -1,6 +1,6 @@
 //
 //  SPViewController.m
-//  SPTestRailReporter
+//  SPTestRailReporterExample
 //
 //  Created by Siddartha Polisetty on 3/22/16.
 //  Copyright (c) 2016 Siddartha Polisetty

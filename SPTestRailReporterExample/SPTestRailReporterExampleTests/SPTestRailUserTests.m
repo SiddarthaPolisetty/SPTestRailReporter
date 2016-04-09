@@ -1,6 +1,6 @@
 //
 //  SPTestRailUserTests.m
-//  SPTestRailReporter
+//  SPTestRailReporterExampleTests
 //
 //  Created by Siddartha Polisetty on 4/1/16.
 //  Copyright (c) 2016 Siddartha Polisetty
@@ -36,9 +36,9 @@
 
 - (void)setUp {
     [super setUp];
-    [SPTestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL = [NSURL URLWithString:@"https://siddarthapolisetty.testrail.net"];
-    [SPTestRailConfigurationBuilder sharedConfigurationBuilder].userName = @"siddarthpolishetty@yahoo.com";
-    [SPTestRailConfigurationBuilder sharedConfigurationBuilder].password = @"Test1234!";
+    [SPTestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL = [NSURL URLWithString:@"<yourtestrailurl>"];
+    [SPTestRailConfigurationBuilder sharedConfigurationBuilder].userName = @"<yourtestrailemail>";
+    [SPTestRailConfigurationBuilder sharedConfigurationBuilder].password = @"<yourtestrailpassword>";
 }
 
 - (void)testUsersAPI {

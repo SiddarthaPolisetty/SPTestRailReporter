@@ -1,6 +1,6 @@
 //
 //  SPTestRailResult.h
-//  SPTestRailReporter
+//  SPTestRailReporterExample
 //
 //  Created by Siddartha Polisetty on 3/30/16.
 //  Copyright (c) 2016 Siddartha Polisetty

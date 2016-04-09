@@ -1,5 +1,5 @@
 //
-//  SPTestRailReporter.h
+//  SPTestRailReporterExample.h
 //  DocsAtWork
 //
 //  Created by Siddartha Polisetty on 3/22/16.

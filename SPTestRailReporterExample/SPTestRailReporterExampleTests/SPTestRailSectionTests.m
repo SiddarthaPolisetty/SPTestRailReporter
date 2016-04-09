@@ -1,6 +1,6 @@
 //
 //  SPTestRailSectionTests.m
-//  SPTestRailReporter
+//  SPTestRailReporterExampleTests
 //
 //  Created by Siddartha Polisetty on 4/3/16.
 //  Copyright (c) 2016 Siddartha Polisetty
@@ -38,9 +38,9 @@
 - (void)setUp {
     [super setUp];
     NSError *error = nil;
-    [SPTestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL = [NSURL URLWithString:@"https://siddarthapolisetty.testrail.net"];
-    [SPTestRailConfigurationBuilder sharedConfigurationBuilder].userName = @"siddarthpolishetty@yahoo.com";
-    [SPTestRailConfigurationBuilder sharedConfigurationBuilder].password = @"Test1234!";
+    [SPTestRailConfigurationBuilder sharedConfigurationBuilder].testRailBaseURL = [NSURL URLWithString:@"<yourtestrailurl>"];
+    [SPTestRailConfigurationBuilder sharedConfigurationBuilder].userName = @"<yourtestrailemail>";
+    [SPTestRailConfigurationBuilder sharedConfigurationBuilder].password = @"<yourtestrailpassword>";
     SPTestRailProject *projectForTesting = [[SPTestRailProject alloc] initWithName:@"Project Milestone Test" Announcement:@"testing the API" Mode:SPTestRailSuiteModeMultipleSuites];
     projectForTesting = [[SPTestRailReporter sharedReporter] addProject:projectForTesting Error:&error];
     self.createdProjectId = projectForTesting.projectId;

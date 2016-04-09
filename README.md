@@ -12,12 +12,12 @@ Modern Test Case Management Software for QA and Development Teams
 - Get real-time insights into your testing progress.
 - Integrates with your issue tracker & test automation.
 
-## How to use SPTestRailReporter in your project
-- Simply add `pod 'SPTestRailReporter', '1.0.0'` as a dependency in your project.
+## Add SPTestRailReporter to your project
+- Simply add [`pod 'SPTestRailReporter', '1.0.0'`](https://cocoapods.org/?q=SPTestRail) as a dependency in your project.
 - You can also fork/download and start building cool stuff with [SPTestRailReporter Repository](https://github.com/SiddarthaPolisetty/SPTestRailReporter). 
 
 ## Using SPTestRailReporter
-**SPTestRailReporter** performs almost all CRUD operations on all entities supported by TestRail api v2. The following documentation helps you onboard SPTestRailReporter.
+**SPTestRailReporter** performs CRUD operations on most entities supported by TestRail api v2. The following documentation helps you onboard SPTestRailReporter.
 
 - Headers Required
     ```objective-c
@@ -38,7 +38,7 @@ Modern Test Case Management Software for QA and Development Teams
 
 - Now, that you have SPTestRailProvider's singleton instance, you are all set to play with the following API interfaces.
 
-- Utilities for TestRail Results
+- Utils for TestRail Results
     ```objective-c
     - (NSArray *)getAllResultsforTestId:(NSNumber *)testId Error:(NSError *__autoreleasing *)error;
     - (NSArray *)getAllResultsforCaseId:(NSNumber *)caseId ForRunId:(NSNumber *)runId Error:(NSError *__autoreleasing *)error;
@@ -140,12 +140,14 @@ Modern Test Case Management Software for QA and Development Teams
     - (NSArray *)getAllProjectsError:(NSError *__autoreleasing *)error;
     - (SPTestRailProject *)getProjectWithId:(NSNumber *)projectId Error:(NSError *__autoreleasing *)error;
     ```
+    
+- More Usage Examples can be found in [Example](https://github.com/SiddarthaPolisetty/SPTestRailReporter/tree/master/SPTestRailReporterExample). This Example adds SPTestRailReporter as a pod to the test target.
 
 ## TestRail API Reference
 More Information on model schema, usage information and common error codes can be found here [API V2](http://docs.gurock.com/testrail-api2/start) 
 
 ## Author and Contributor
-Created with love by [SiddarthaPolisetty](https://www.linkedin.com/in/siddarthapolisetty). 
+Created with love by [Siddartha Polisetty](https://www.linkedin.com/in/siddarthapolisetty). 
 
 ## Contact
 Please Create an issue and assign it to @SiddarthaPolisetty.

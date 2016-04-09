@@ -1,4 +1,7 @@
 [![Build Status](https://travis-ci.com/SiddarthaPolisetty/SPTestRailReporter.svg?token=gvbx8gBcsPpfM9guFszy&branch=master)](https://travis-ci.com/SiddarthaPolisetty/SPTestRailReporter)
+[![Version](http://img.shields.io/cocoapods/v/SPTestRailReporter.svg?style=flat)](http://cocoapods.org/pods/SPTestRailReporter) 
+[![Platform](http://img.shields.io/cocoapods/p/SPTestRailReporter.svg?style=flat)](http://cocoapods.org/pods/SPTestRailReporter)
+[![License](http://img.shields.io/cocoapods/l/SPTestRailReporter.svg?style=flat)](https://github.com/SiddarthaPolisetty/SPTestRailReporter/blob/master/LICENSE)
 # **SPTestRailReporter**
 **[SPTestRailReporter](http://siddarthapolisetty.github.io/SPTestRailReporter/)** is the missing iOS Framework that automagically performs [TestRail](http://www.gurock.com/testrail/) Reporting.
 
@@ -9,17 +12,16 @@ Modern Test Case Management Software for QA and Development Teams
 - Get real-time insights into your testing progress.
 - Integrates with your issue tracker & test automation.
 
-## How to integrate SPTestRailReporter into your project
-- At present we have this [SPTestRailReporter](https://github.com/SiddarthaPolisetty/SPTestRailReporter) Repository. You can download and start building cool stuff.
-- We are busy building more features and eventually create a pod to easily plug and play :)
+## How to use SPTestRailReporter in your project
+- Simply add `pod 'SPTestRailReporter', '1.0.0'` as a dependency in your project.
+- You can also fork/download and start building cool stuff with [SPTestRailReporter Repository](https://github.com/SiddarthaPolisetty/SPTestRailReporter). 
 
 ## Using SPTestRailReporter
 **SPTestRailReporter** performs almost all CRUD operations on all entities supported by TestRail api v2. The following documentation helps you onboard SPTestRailReporter.
 
 - Headers Required
     ```objective-c
-    #import "SPTestRailReporter.h"
-    #import "SPTestRailConfigurationBuilder.h"
+    #import <SPTestRailReporter/SPTestRailReporter.h>
     ```
 
 - Configure to Point to your TestRail instance, provide credentials for accessing the api's.
@@ -142,8 +144,8 @@ Modern Test Case Management Software for QA and Development Teams
 ## TestRail API Reference
 More Information on model schema, usage information and common error codes can be found here [API V2](http://docs.gurock.com/testrail-api2/start) 
 
-## Authors and Contributors
-Created with love by @SiddarthaPolisetty. 
+## Author and Contributor
+Created with love by [SiddarthaPolisetty](https://www.linkedin.com/in/siddarthapolisetty). 
 
 ## Contact
 Please Create an issue and assign it to @SiddarthaPolisetty.

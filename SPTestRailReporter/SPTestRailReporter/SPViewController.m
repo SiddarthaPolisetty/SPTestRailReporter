@@ -23,17 +23,18 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 //
-
 #import "SPViewController.h"
 
 @interface SPViewController ()
-
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 @end
 
 @implementation SPViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    NSURL *myURL = [NSURL URLWithString:@"https://siddarthapolisetty.github.io/SPTestRailReporter/"];
+    NSURLRequest *myRequest = [NSURLRequest requestWithURL:myURL];
+    [self.webView loadRequest:myRequest];
 }
 @end

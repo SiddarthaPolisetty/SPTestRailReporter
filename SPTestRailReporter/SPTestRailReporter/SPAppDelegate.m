@@ -36,12 +36,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
     SPViewController *viewController = [[SPViewController alloc] init];
     viewController.navigationItem.title = @"SPTestRailReporter";
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
-    [self.window setRootViewController:navigationController];
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
-    self.window.backgroundColor = [UIColor whiteColor];
     return YES;
 }
 @end

@@ -10,9 +10,11 @@
 		6302243D1CB2E3DC000CD20D /* SPTestRailPlanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6302243C1CB2E3DC000CD20D /* SPTestRailPlanTests.m */; };
 		6302243F1CB309F1000CD20D /* SPTestRailCaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6302243E1CB309F1000CD20D /* SPTestRailCaseTests.m */; };
 		630224431CB32BAD000CD20D /* SPTestRailTestAndResultTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 630224421CB32BAD000CD20D /* SPTestRailTestAndResultTests.m */; };
+		630FAF3E1CB8E83B005C1AAC /* SPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630FAF3C1CB8E83B005C1AAC /* SPViewController.m */; };
+		630FAF3F1CB8E83B005C1AAC /* SPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630FAF3D1CB8E83B005C1AAC /* SPViewController.xib */; };
+		630FAF411CB8E86B005C1AAC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 630FAF401CB8E86B005C1AAC /* Default-568h@2x.png */; };
 		631372471CA225A500B89E89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 631372461CA225A500B89E89 /* main.m */; };
 		6313724A1CA225A500B89E89 /* SPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 631372491CA225A500B89E89 /* SPAppDelegate.m */; };
-		6313724D1CA225A500B89E89 /* SPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313724C1CA225A500B89E89 /* SPViewController.m */; };
 		631372521CA225A500B89E89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631372511CA225A500B89E89 /* Assets.xcassets */; };
 		631372601CA225A500B89E89 /* SPTestRailProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313725F1CA225A500B89E89 /* SPTestRailProjectTests.m */; };
 		6313726E1CA225D700B89E89 /* SPTestRailProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313726B1CA225D700B89E89 /* SPTestRailProject.m */; };
@@ -57,12 +59,14 @@
 		6302243C1CB2E3DC000CD20D /* SPTestRailPlanTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailPlanTests.m; sourceTree = "<group>"; };
 		6302243E1CB309F1000CD20D /* SPTestRailCaseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailCaseTests.m; sourceTree = "<group>"; };
 		630224421CB32BAD000CD20D /* SPTestRailTestAndResultTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailTestAndResultTests.m; sourceTree = "<group>"; };
+		630FAF3B1CB8E83B005C1AAC /* SPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPViewController.h; sourceTree = "<group>"; };
+		630FAF3C1CB8E83B005C1AAC /* SPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPViewController.m; sourceTree = "<group>"; };
+		630FAF3D1CB8E83B005C1AAC /* SPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPViewController.xib; sourceTree = "<group>"; };
+		630FAF401CB8E86B005C1AAC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		631372421CA225A500B89E89 /* SPTestRailReporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPTestRailReporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		631372461CA225A500B89E89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		631372481CA225A500B89E89 /* SPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAppDelegate.h; sourceTree = "<group>"; };
 		631372491CA225A500B89E89 /* SPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAppDelegate.m; sourceTree = "<group>"; };
-		6313724B1CA225A500B89E89 /* SPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPViewController.h; sourceTree = "<group>"; };
-		6313724C1CA225A500B89E89 /* SPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPViewController.m; sourceTree = "<group>"; };
 		631372511CA225A500B89E89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		631372561CA225A500B89E89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6313725B1CA225A500B89E89 /* SPTestRailReporter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPTestRailReporter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +152,7 @@
 		631372391CA225A500B89E89 = {
 			isa = PBXGroup;
 			children = (
+				630FAF401CB8E86B005C1AAC /* Default-568h@2x.png */,
 				631372441CA225A500B89E89 /* SPTestRailReporter */,
 				6313725E1CA225A500B89E89 /* SPTestRailReporterTests */,
 				631372431CA225A500B89E89 /* Products */,
@@ -170,8 +175,9 @@
 			children = (
 				631372481CA225A500B89E89 /* SPAppDelegate.h */,
 				631372491CA225A500B89E89 /* SPAppDelegate.m */,
-				6313724B1CA225A500B89E89 /* SPViewController.h */,
-				6313724C1CA225A500B89E89 /* SPViewController.m */,
+				630FAF3B1CB8E83B005C1AAC /* SPViewController.h */,
+				630FAF3C1CB8E83B005C1AAC /* SPViewController.m */,
+				630FAF3D1CB8E83B005C1AAC /* SPViewController.xib */,
 				631372511CA225A500B89E89 /* Assets.xcassets */,
 				631372561CA225A500B89E89 /* Info.plist */,
 				631372451CA225A500B89E89 /* Supporting Files */,
@@ -378,6 +384,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				631372521CA225A500B89E89 /* Assets.xcassets in Resources */,
+				630FAF411CB8E86B005C1AAC /* Default-568h@2x.png in Resources */,
+				630FAF3F1CB8E83B005C1AAC /* SPViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,9 +496,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6313724D1CA225A500B89E89 /* SPViewController.m in Sources */,
 				6313724A1CA225A500B89E89 /* SPAppDelegate.m in Sources */,
 				631372471CA225A500B89E89 /* main.m in Sources */,
+				630FAF3E1CB8E83B005C1AAC /* SPViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

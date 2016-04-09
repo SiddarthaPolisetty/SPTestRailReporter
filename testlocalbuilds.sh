@@ -1,4 +1,4 @@
 #!/bin/sh
-xctool -workspace SPTestRailReporter/SPTestRailReporter.xcworkspace -scheme SPTestRailReporter -sdk iphonesimulator clean
-xctool -workspace SPTestRailReporter/SPTestRailReporter.xcworkspace -scheme SPTestRailReporter -sdk iphonesimulator build
-xctool -workspace SPTestRailReporter/SPTestRailReporter.xcworkspace -scheme SPTestRailReporter -sdk iphonesimulator test
+xctool -workspace SPTestRailReporterExample/SPTestRailReporterExample.xcworkspace -scheme SPTestRailReporterExample -sdk iphonesimulator clean
+xctool -workspace SPTestRailReporterExample/SPTestRailReporterExample.xcworkspace -scheme SPTestRailReporterExample -sdk iphonesimulator build
+xctool -workspace SPTestRailReporterExample/SPTestRailReporterExample.xcworkspace -scheme SPTestRailReporterExample -sdk iphonesimulator test

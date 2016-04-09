@@ -1,6 +1,0 @@
-framework module Pods_SPTestRailReporterTests {
-  umbrella header "Pods-SPTestRailReporterTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

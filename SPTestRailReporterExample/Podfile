@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+target 'SPTestRailReporterExample’ do
+end
+
+target 'SPTestRailReporterExampleTests' do
+pod 'NSData+Base64', '1.0.0'
+pod 'AFNetworking', '2.5.4'
+pod 'JSONModel', '1.2.0'
+end

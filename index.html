@@ -43,17 +43,17 @@
 </ul>
 
 <h2>
-<a id="how-to-use-sptestrailreporter-in-your-project" class="anchor" href="#how-to-use-sptestrailreporter-in-your-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use SPTestRailReporter in your project</h2>
+<a id="add-sptestrailreporter-to-your-project" class="anchor" href="#add-sptestrailreporter-to-your-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Add SPTestRailReporter to your project</h2>
 
 <ul>
-<li>Simply add <code>pod 'SPTestRailReporter', '1.0.0'</code> as a dependency in your project.</li>
+<li>Simply add <a href="https://cocoapods.org/?q=SPTestRail"><code>pod 'SPTestRailReporter', '1.0.0'</code></a> as a dependency in your project.</li>
 <li>You can also fork/download and start building cool stuff with <a href="https://github.com/SiddarthaPolisetty/SPTestRailReporter">SPTestRailReporter Repository</a>. </li>
 </ul>
 
 <h2>
 <a id="using-sptestrailreporter" class="anchor" href="#using-sptestrailreporter" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using SPTestRailReporter</h2>
 
-<p><strong>SPTestRailReporter</strong> performs almost all CRUD operations on all entities supported by TestRail api v2. The following documentation helps you onboard SPTestRailReporter.</p>
+<p><strong>SPTestRailReporter</strong> performs CRUD operations on most entities supported by TestRail api v2. The following documentation helps you onboard SPTestRailReporter.</p>
 
 <ul>
 <li>
@@ -75,7 +75,7 @@
 </li>
 <li><p>Now, that you have SPTestRailProvider's singleton instance, you are all set to play with the following API interfaces.</p></li>
 <li>
-<p>Utilities for TestRail Results</p>
+<p>Utils for TestRail Results</p>
 
 <div class="highlight highlight-source-objc"><pre>- (<span class="pl-c1">NSArray</span> *)getAllResultsforTestId:(<span class="pl-c1">NSNumber</span> *)testId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
 - (<span class="pl-c1">NSArray</span> *)getAllResultsforCaseId:(<span class="pl-c1">NSNumber</span> *)caseId ForRunId:(<span class="pl-c1">NSNumber</span> *)runId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
@@ -177,6 +177,7 @@
 - (<span class="pl-c1">NSArray</span> *)getAllProjectsError:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;
 - (SPTestRailProject *)getProjectWithId:(<span class="pl-c1">NSNumber</span> *)projectId Error:(<span class="pl-c1">NSError</span> *__autoreleasing *)error;</pre></div>
 </li>
+<li><p>More Usage Examples can be found in <a href="https://github.com/SiddarthaPolisetty/SPTestRailReporter/tree/master/SPTestRailReporterExample">Example</a>. This Example adds SPTestRailReporter as a pod to the test target.</p></li>
 </ul>
 
 <h2>
@@ -187,7 +188,7 @@
 <h2>
 <a id="author-and-contributor" class="anchor" href="#author-and-contributor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Author and Contributor</h2>
 
-<p>Created with love by <a href="https://www.linkedin.com/in/siddarthapolisetty">SiddarthaPolisetty</a>. </p>
+<p>Created with love by <a href="https://www.linkedin.com/in/siddarthapolisetty">Siddartha Polisetty</a>. </p>
 
 <h2>
 <a id="contact" class="anchor" href="#contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contact</h2>

@@ -9,4 +9,5 @@ target 'SPTestRailReporterExampleTests' do
 pod 'NSData+Base64', '1.0.0'
 pod 'AFNetworking', '2.5.4'
 pod 'JSONModel', '1.2.0'
+pod 'SPTestRailReporter', :git => 'https://github.com/SiddarthaPolisetty/SPTestRailReporter.git'
 end

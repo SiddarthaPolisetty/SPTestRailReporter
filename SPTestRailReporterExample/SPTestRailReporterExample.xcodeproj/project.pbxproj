@@ -18,25 +18,8 @@
 		6313724A1CA225A500B89E89 /* SPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 631372491CA225A500B89E89 /* SPAppDelegate.m */; };
 		631372521CA225A500B89E89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631372511CA225A500B89E89 /* Assets.xcassets */; };
 		631372601CA225A500B89E89 /* SPTestRailProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313725F1CA225A500B89E89 /* SPTestRailProjectTests.m */; };
-		6313726E1CA225D700B89E89 /* SPTestRailProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313726B1CA225D700B89E89 /* SPTestRailProject.m */; };
-		6313726F1CA225D700B89E89 /* SPTestRailReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313726D1CA225D700B89E89 /* SPTestRailReporter.m */; };
-		631F313D1CAC505C002E3D33 /* SPTestRailTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 631F313C1CAC505C002E3D33 /* SPTestRailTest.m */; };
-		631F31401CAC5464002E3D33 /* SPTestRailPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = 631F313F1CAC5464002E3D33 /* SPTestRailPlan.m */; };
-		631F31431CAC6BE0002E3D33 /* SPTestRailPlanEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 631F31421CAC6BE0002E3D33 /* SPTestRailPlanEntry.m */; };
-		631F314A1CAC93E6002E3D33 /* SPTestRailConfigurationBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 631F31491CAC93E6002E3D33 /* SPTestRailConfigurationBuilder.m */; };
-		632395611CAB320A0013A657 /* SPTestRailCustomStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 632395601CAB320A0013A657 /* SPTestRailCustomStep.m */; };
-		632395641CAB3A760013A657 /* SPTestRailMileStone.m in Sources */ = {isa = PBXBuildFile; fileRef = 632395631CAB3A760013A657 /* SPTestRailMileStone.m */; };
-		6326B1641CA4A4810086EFA6 /* JSONValueTransformer+SPTestRailTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6326B1631CA4A4810086EFA6 /* JSONValueTransformer+SPTestRailTransformer.m */; };
-		6326B1671CA4AAC20086EFA6 /* SPTestRailSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 6326B1661CA4AAC20086EFA6 /* SPTestRailSuite.m */; };
-		6326B16E1CA4BA210086EFA6 /* SPTestRailCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6326B16D1CA4BA210086EFA6 /* SPTestRailCase.m */; };
-		6330EB441CAE523D00180D6A /* SPTestRailConfigGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 6330EB431CAE523D00180D6A /* SPTestRailConfigGroup.m */; };
-		6330EB471CAE52DE00180D6A /* SPTestRailConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6330EB461CAE52DE00180D6A /* SPTestRailConfig.m */; };
 		633749A51CAF2E0600653241 /* SPTestRailUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 633749A41CAF2E0600653241 /* SPTestRailUserTests.m */; };
 		633749A71CAF40FC00653241 /* SPTestRailMileStoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 633749A61CAF40FC00653241 /* SPTestRailMileStoneTests.m */; };
-		635AF6C21CAB466D004D765B /* SPTestRailUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 635AF6C11CAB466D004D765B /* SPTestRailUser.m */; };
-		635AF6C51CAB4809004D765B /* SPTestRailSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 635AF6C41CAB4809004D765B /* SPTestRailSection.m */; };
-		635AF6C81CAB8E63004D765B /* SPTestRailRun.m in Sources */ = {isa = PBXBuildFile; fileRef = 635AF6C71CAB8E63004D765B /* SPTestRailRun.m */; };
-		635D05F61CABB286009D017C /* SPTestRailResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 635D05F51CABB286009D017C /* SPTestRailResult.m */; };
 		637D622C1CB2273600ECAEA7 /* SPTestRailSectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 637D622B1CB2273600ECAEA7 /* SPTestRailSectionTests.m */; };
 		637D622E1CB2388B00ECAEA7 /* SPTestRailSuiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 637D622D1CB2388B00ECAEA7 /* SPTestRailSuiteTests.m */; };
 		637D62301CB2421700ECAEA7 /* SPTestRailTestRunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 637D622F1CB2421700ECAEA7 /* SPTestRailTestRunTests.m */; };
@@ -75,42 +58,8 @@
 		6313725B1CA225A500B89E89 /* SPTestRailReporterExample.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPTestRailReporterExample.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6313725F1CA225A500B89E89 /* SPTestRailProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPTestRailProjectTests.m; sourceTree = "<group>"; };
 		631372611CA225A500B89E89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6313726A1CA225D700B89E89 /* SPTestRailProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTestRailProject.h; sourceTree = "<group>"; };
-		6313726B1CA225D700B89E89 /* SPTestRailProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailProject.m; sourceTree = "<group>"; };
-		6313726C1CA225D700B89E89 /* SPTestRailReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTestRailReporter.h; sourceTree = "<group>"; };
-		6313726D1CA225D700B89E89 /* SPTestRailReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailReporter.m; sourceTree = "<group>"; };
-		631F313B1CAC505C002E3D33 /* SPTestRailTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTestRailTest.h; sourceTree = "<group>"; };
-		631F313C1CAC505C002E3D33 /* SPTestRailTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailTest.m; sourceTree = "<group>"; };
-		631F313E1CAC5464002E3D33 /* SPTestRailPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTestRailPlan.h; sourceTree = "<group>"; };
-		631F313F1CAC5464002E3D33 /* SPTestRailPlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailPlan.m; sourceTree = "<group>"; };
-		631F31411CAC6BE0002E3D33 /* SPTestRailPlanEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTestRailPlanEntry.h; sourceTree = "<group>"; };
-		631F31421CAC6BE0002E3D33 /* SPTestRailPlanEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailPlanEntry.m; sourceTree = "<group>"; };
-		631F31481CAC93E6002E3D33 /* SPTestRailConfigurationBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTestRailConfigurationBuilder.h; sourceTree = "<group>"; };
-		631F31491CAC93E6002E3D33 /* SPTestRailConfigurationBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailConfigurationBuilder.m; sourceTree = "<group>"; };
-		6323955F1CAB32090013A657 /* SPTestRailCustomStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTestRailCustomStep.h; sourceTree = "<group>"; };
-		632395601CAB320A0013A657 /* SPTestRailCustomStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailCustomStep.m; sourceTree = "<group>"; };
-		632395621CAB3A760013A657 /* SPTestRailMileStone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTestRailMileStone.h; sourceTree = "<group>"; };
-		632395631CAB3A760013A657 /* SPTestRailMileStone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailMileStone.m; sourceTree = "<group>"; };
-		6326B1621CA4A4810086EFA6 /* JSONValueTransformer+SPTestRailTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+SPTestRailTransformer.h"; sourceTree = "<group>"; };
-		6326B1631CA4A4810086EFA6 /* JSONValueTransformer+SPTestRailTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+SPTestRailTransformer.m"; sourceTree = "<group>"; };
-		6326B1651CA4AAC20086EFA6 /* SPTestRailSuite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTestRailSuite.h; sourceTree = "<group>"; };
-		6326B1661CA4AAC20086EFA6 /* SPTestRailSuite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailSuite.m; sourceTree = "<group>"; };
-		6326B16C1CA4BA210086EFA6 /* SPTestRailCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTestRailCase.h; sourceTree = "<group>"; };
-		6326B16D1CA4BA210086EFA6 /* SPTestRailCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailCase.m; sourceTree = "<group>"; };
-		6330EB421CAE523D00180D6A /* SPTestRailConfigGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTestRailConfigGroup.h; sourceTree = "<group>"; };
-		6330EB431CAE523D00180D6A /* SPTestRailConfigGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailConfigGroup.m; sourceTree = "<group>"; };
-		6330EB451CAE52DE00180D6A /* SPTestRailConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTestRailConfig.h; sourceTree = "<group>"; };
-		6330EB461CAE52DE00180D6A /* SPTestRailConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailConfig.m; sourceTree = "<group>"; };
 		633749A41CAF2E0600653241 /* SPTestRailUserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailUserTests.m; sourceTree = "<group>"; };
 		633749A61CAF40FC00653241 /* SPTestRailMileStoneTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailMileStoneTests.m; sourceTree = "<group>"; };
-		635AF6C01CAB466D004D765B /* SPTestRailUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTestRailUser.h; sourceTree = "<group>"; };
-		635AF6C11CAB466D004D765B /* SPTestRailUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailUser.m; sourceTree = "<group>"; };
-		635AF6C31CAB4809004D765B /* SPTestRailSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTestRailSection.h; sourceTree = "<group>"; };
-		635AF6C41CAB4809004D765B /* SPTestRailSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailSection.m; sourceTree = "<group>"; };
-		635AF6C61CAB8E63004D765B /* SPTestRailRun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTestRailRun.h; sourceTree = "<group>"; };
-		635AF6C71CAB8E63004D765B /* SPTestRailRun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailRun.m; sourceTree = "<group>"; };
-		635D05F41CABB286009D017C /* SPTestRailResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTestRailResult.h; sourceTree = "<group>"; };
-		635D05F51CABB286009D017C /* SPTestRailResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailResult.m; sourceTree = "<group>"; };
 		637D622B1CB2273600ECAEA7 /* SPTestRailSectionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailSectionTests.m; sourceTree = "<group>"; };
 		637D622D1CB2388B00ECAEA7 /* SPTestRailSuiteTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailSuiteTests.m; sourceTree = "<group>"; };
 		637D622F1CB2421700ECAEA7 /* SPTestRailTestRunTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailTestRunTests.m; sourceTree = "<group>"; };
@@ -205,57 +154,10 @@
 		6313725E1CA225A500B89E89 /* SPTestRailReporterExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				6330EB3E1CAE4C0F00180D6A /* Utils */,
 				6330EB3D1CAE4C0800180D6A /* Tests */,
-				631F31471CAC93C6002E3D33 /* Configuration */,
-				6326B16B1CA4B73B0086EFA6 /* Model */,
 				6330EB3F1CAE4C2F00180D6A /* Resources */,
 			);
 			path = SPTestRailReporterExampleTests;
-			sourceTree = "<group>";
-		};
-		631F31471CAC93C6002E3D33 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				631F31481CAC93E6002E3D33 /* SPTestRailConfigurationBuilder.h */,
-				631F31491CAC93E6002E3D33 /* SPTestRailConfigurationBuilder.m */,
-			);
-			name = Configuration;
-			sourceTree = "<group>";
-		};
-		6326B16B1CA4B73B0086EFA6 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				6313726A1CA225D700B89E89 /* SPTestRailProject.h */,
-				6313726B1CA225D700B89E89 /* SPTestRailProject.m */,
-				6326B1651CA4AAC20086EFA6 /* SPTestRailSuite.h */,
-				6326B1661CA4AAC20086EFA6 /* SPTestRailSuite.m */,
-				6326B16C1CA4BA210086EFA6 /* SPTestRailCase.h */,
-				6326B16D1CA4BA210086EFA6 /* SPTestRailCase.m */,
-				6323955F1CAB32090013A657 /* SPTestRailCustomStep.h */,
-				632395601CAB320A0013A657 /* SPTestRailCustomStep.m */,
-				632395621CAB3A760013A657 /* SPTestRailMileStone.h */,
-				632395631CAB3A760013A657 /* SPTestRailMileStone.m */,
-				635AF6C01CAB466D004D765B /* SPTestRailUser.h */,
-				635AF6C11CAB466D004D765B /* SPTestRailUser.m */,
-				635AF6C31CAB4809004D765B /* SPTestRailSection.h */,
-				635AF6C41CAB4809004D765B /* SPTestRailSection.m */,
-				635AF6C61CAB8E63004D765B /* SPTestRailRun.h */,
-				635AF6C71CAB8E63004D765B /* SPTestRailRun.m */,
-				635D05F41CABB286009D017C /* SPTestRailResult.h */,
-				635D05F51CABB286009D017C /* SPTestRailResult.m */,
-				631F313B1CAC505C002E3D33 /* SPTestRailTest.h */,
-				631F313C1CAC505C002E3D33 /* SPTestRailTest.m */,
-				631F313E1CAC5464002E3D33 /* SPTestRailPlan.h */,
-				631F313F1CAC5464002E3D33 /* SPTestRailPlan.m */,
-				631F31411CAC6BE0002E3D33 /* SPTestRailPlanEntry.h */,
-				631F31421CAC6BE0002E3D33 /* SPTestRailPlanEntry.m */,
-				6330EB421CAE523D00180D6A /* SPTestRailConfigGroup.h */,
-				6330EB431CAE523D00180D6A /* SPTestRailConfigGroup.m */,
-				6330EB451CAE52DE00180D6A /* SPTestRailConfig.h */,
-				6330EB461CAE52DE00180D6A /* SPTestRailConfig.m */,
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 		6330EB3D1CAE4C0800180D6A /* Tests */ = {
@@ -273,17 +175,6 @@
 				630224421CB32BAD000CD20D /* SPTestRailTestAndResultTests.m */,
 			);
 			name = Tests;
-			sourceTree = "<group>";
-		};
-		6330EB3E1CAE4C0F00180D6A /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				6313726C1CA225D700B89E89 /* SPTestRailReporter.h */,
-				6313726D1CA225D700B89E89 /* SPTestRailReporter.m */,
-				6326B1621CA4A4810086EFA6 /* JSONValueTransformer+SPTestRailTransformer.h */,
-				6326B1631CA4A4810086EFA6 /* JSONValueTransformer+SPTestRailTransformer.m */,
-			);
-			name = Utils;
 			sourceTree = "<group>";
 		};
 		6330EB3F1CAE4C2F00180D6A /* Resources */ = {
@@ -520,31 +411,14 @@
 			files = (
 				631372601CA225A500B89E89 /* SPTestRailProjectTests.m in Sources */,
 				637D62301CB2421700ECAEA7 /* SPTestRailTestRunTests.m in Sources */,
-				6313726E1CA225D700B89E89 /* SPTestRailProject.m in Sources */,
-				631F31401CAC5464002E3D33 /* SPTestRailPlan.m in Sources */,
 				6302243F1CB309F1000CD20D /* SPTestRailCaseTests.m in Sources */,
-				6326B1671CA4AAC20086EFA6 /* SPTestRailSuite.m in Sources */,
-				6313726F1CA225D700B89E89 /* SPTestRailReporter.m in Sources */,
-				635AF6C81CAB8E63004D765B /* SPTestRailRun.m in Sources */,
-				632395641CAB3A760013A657 /* SPTestRailMileStone.m in Sources */,
-				6326B1641CA4A4810086EFA6 /* JSONValueTransformer+SPTestRailTransformer.m in Sources */,
 				630224431CB32BAD000CD20D /* SPTestRailTestAndResultTests.m in Sources */,
-				6330EB471CAE52DE00180D6A /* SPTestRailConfig.m in Sources */,
 				633749A71CAF40FC00653241 /* SPTestRailMileStoneTests.m in Sources */,
 				6302243D1CB2E3DC000CD20D /* SPTestRailPlanTests.m in Sources */,
 				637D622C1CB2273600ECAEA7 /* SPTestRailSectionTests.m in Sources */,
-				632395611CAB320A0013A657 /* SPTestRailCustomStep.m in Sources */,
-				631F313D1CAC505C002E3D33 /* SPTestRailTest.m in Sources */,
-				631F31431CAC6BE0002E3D33 /* SPTestRailPlanEntry.m in Sources */,
-				635AF6C21CAB466D004D765B /* SPTestRailUser.m in Sources */,
 				63B8EE851CAE554E00A7C8D5 /* SPTestRailConfigTests.m in Sources */,
-				631F314A1CAC93E6002E3D33 /* SPTestRailConfigurationBuilder.m in Sources */,
-				635D05F61CABB286009D017C /* SPTestRailResult.m in Sources */,
 				633749A51CAF2E0600653241 /* SPTestRailUserTests.m in Sources */,
 				637D622E1CB2388B00ECAEA7 /* SPTestRailSuiteTests.m in Sources */,
-				6326B16E1CA4BA210086EFA6 /* SPTestRailCase.m in Sources */,
-				6330EB441CAE523D00180D6A /* SPTestRailConfigGroup.m in Sources */,
-				635AF6C51CAB4809004D765B /* SPTestRailSection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

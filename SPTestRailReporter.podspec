@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name         = "SPTestRailReporter"
-    s.version      = "0.0.1"
+    s.version      = "1.0.0"
     s.summary      = "SPTestRailReporter is the missing iOS Framework that automagically performs TestRail Reporting."
     s.description  = <<-DESC
                     SPTestRailReporter performs almost all CRUD operations on all entities supported by TestRail api v2. The following documentation helps you onboard SPTestRailReporter.

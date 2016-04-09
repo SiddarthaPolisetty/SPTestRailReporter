@@ -25,8 +25,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "SPTestRailReporter.h"
-#import "SPTestRailConfigurationBuilder.h"
+#import <SPTestRailReporter/SPTestRailReporter.h>
 
 @interface SPTestRailPlanTests : XCTestCase
 @property (nonatomic, strong) NSNumber *createdProjectId;

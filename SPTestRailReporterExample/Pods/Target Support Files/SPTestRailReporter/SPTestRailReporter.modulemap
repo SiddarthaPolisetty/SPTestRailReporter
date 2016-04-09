@@ -1,0 +1,6 @@
+framework module SPTestRailReporter {
+  umbrella header "SPTestRailReporter-umbrella.h"
+
+  export *
+  module * { export * }
+}

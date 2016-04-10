@@ -8,6 +8,6 @@ before_install:
   - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
 language: objective-c
 script:
-  - xctool/xctool.sh -workspace SPTestRailReporterExample/SPTestRailReporterExample.xcworkspace -scheme SPTestRailReporterExample clean
-  - xctool/xctool.sh -workspace SPTestRailReporterExample/SPTestRailReporterExample.xcworkspace -scheme SPTestRailReporterExample build
-  - xctool/xctool.sh -workspace SPTestRailReporterExample/SPTestRailReporterExample.xcworkspace -scheme SPTestRailReporterExample test
+  - xctool -workspace SPTestRailReporterExample/SPTestRailReporterExample.xcworkspace -scheme SPTestRailReporterExample clean
+  - xctool -workspace SPTestRailReporterExample/SPTestRailReporterExample.xcworkspace -scheme SPTestRailReporterExample build
+  - xctool -workspace SPTestRailReporterExample/SPTestRailReporterExample.xcworkspace -scheme SPTestRailReporterExample -sdk iphonesimulator test ONLY_ACTIVE_ARCH=YES

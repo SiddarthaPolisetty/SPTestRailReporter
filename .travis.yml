@@ -1,4 +1,3 @@
-# file: .travis.yml
 osx_image: xcode7.3
 podfile: SPTestRailReporter/Podfile
 rvm: 2.2.2
@@ -10,4 +9,4 @@ before_install:
 
 language: objective-c
 
-script: cleanbuildtest.sh
+script: ./cleanbuildtest.sh

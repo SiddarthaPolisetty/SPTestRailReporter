@@ -1,7 +1,6 @@
 #!/bin/sh
-cd SPTestRailReporterExample
+cd Example
 pod install
-cd ..
-xcodebuild -workspace SPTestRailReporterExample/SPTestRailReporterExample.xcworkspace -scheme SPTestRailReporterExample -sdk iphonesimulator9.3 clean
-xcodebuild -workspace SPTestRailReporterExample/SPTestRailReporterExample.xcworkspace -scheme SPTestRailReporterExample -sdk iphonesimulator9.3
-xcodebuild -workspace SPTestRailReporterExample/SPTestRailReporterExample.xcworkspace -scheme SPTestRailReporterExample -sdk iphonesimulator9.3 test
+xcodebuild -workspace Example.xcworkspace -scheme Example -sdk iphonesimulator9.3 clean
+xcodebuild -workspace Example.xcworkspace -scheme Example -sdk iphonesimulator9.3
+xcodebuild -workspace Example.xcworkspace -scheme Example -sdk iphonesimulator9.3 test

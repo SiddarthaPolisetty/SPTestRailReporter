@@ -7,7 +7,4 @@ before_install:
   - brew update
   - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
 language: objective-c
-script:
-  - xctool/xctool.sh -workspace SPTestRailReporterExample/SPTestRailReporterExample.xcworkspace -scheme SPTestRailReporterExample clean
-  - xctool/xctool.sh -workspace SPTestRailReporterExample/SPTestRailReporterExample.xcworkspace -scheme SPTestRailReporterExample build
-  - xctool/xctool.sh -workspace SPTestRailReporterExample/SPTestRailReporterExample.xcworkspace -scheme SPTestRailReporterExample test
+script:./cleanbuildtest.sh

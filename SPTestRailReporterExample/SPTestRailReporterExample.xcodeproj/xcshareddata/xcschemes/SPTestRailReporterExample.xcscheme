@@ -14,34 +14,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5A639BDF4F99E9AF6C6491C54CC1F709"
-               BuildableName = "Pods_SPTestRailReporterExample.framework"
-               BlueprintName = "Pods-SPTestRailReporterExample"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2EE21428FF9FB33436F794229839E41D"
-               BuildableName = "Pods_SPTestRailReporterExampleTests.framework"
-               BlueprintName = "Pods-SPTestRailReporterExampleTests"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "631372411CA225A500B89E89"
                BuildableName = "SPTestRailReporterExample.app"
                BlueprintName = "SPTestRailReporterExample"

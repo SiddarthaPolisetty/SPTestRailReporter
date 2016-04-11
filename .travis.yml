@@ -3,7 +3,7 @@ podfile: SPTestRailReporter/Podfile
 rvm: 2.2.2
 
 before_install:
-  - gem install cocoapods
+  - gem install cocoapods --pre
   - brew update
 
 language: objective-c

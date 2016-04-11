@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3FC5E4F386D13BCEF9898003 /* Pods_SPTestRailReporterExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BF9A1E4509EB0644E831C9 /* Pods_SPTestRailReporterExampleTests.framework */; };
+		16067578F23BA6F6C90A6CBC /* Pods_SPTestRailReporterExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90198AB433031C453268D7D9 /* Pods_SPTestRailReporterExample.framework */; };
 		6302243D1CB2E3DC000CD20D /* SPTestRailPlanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6302243C1CB2E3DC000CD20D /* SPTestRailPlanTests.m */; };
 		6302243F1CB309F1000CD20D /* SPTestRailCaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6302243E1CB309F1000CD20D /* SPTestRailCaseTests.m */; };
 		630224431CB32BAD000CD20D /* SPTestRailTestAndResultTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 630224421CB32BAD000CD20D /* SPTestRailTestAndResultTests.m */; };
@@ -24,7 +24,7 @@
 		637D622E1CB2388B00ECAEA7 /* SPTestRailSuiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 637D622D1CB2388B00ECAEA7 /* SPTestRailSuiteTests.m */; };
 		637D62301CB2421700ECAEA7 /* SPTestRailTestRunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 637D622F1CB2421700ECAEA7 /* SPTestRailTestRunTests.m */; };
 		63B8EE851CAE554E00A7C8D5 /* SPTestRailConfigTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B8EE841CAE554E00A7C8D5 /* SPTestRailConfigTests.m */; };
-		B80627953CC3B5F0BA806E51 /* Pods_SPTestRailReporterExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A895000E176B2D35915EF6 /* Pods_SPTestRailReporterExample.framework */; };
+		E51E19FBC3733F675E435249 /* Pods_SPTestRailReporterExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDCEA51B6929B1560353D51 /* Pods_SPTestRailReporterExampleTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0894DFB9841A0A170699C40B /* Pods-SPTestRailReporterExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPTestRailReporterExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPTestRailReporterExampleTests/Pods-SPTestRailReporterExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		0EF3FC7FD83324EDD57E7846 /* Pods-SPTestRailReporterExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPTestRailReporterExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPTestRailReporterExampleTests/Pods-SPTestRailReporterExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4CD2860CEB700E21A59AAA76 /* Pods-SPTestRailReporterExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPTestRailReporterExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPTestRailReporterExample/Pods-SPTestRailReporterExample.release.xcconfig"; sourceTree = "<group>"; };
+		0D9A4866F1DA3C5639A2F2D0 /* Pods-SPTestRailReporterExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPTestRailReporterExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPTestRailReporterExample/Pods-SPTestRailReporterExample.release.xcconfig"; sourceTree = "<group>"; };
+		2EA64AB545627283604589CA /* Pods-SPTestRailReporterExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPTestRailReporterExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPTestRailReporterExample/Pods-SPTestRailReporterExample.debug.xcconfig"; sourceTree = "<group>"; };
 		6302243C1CB2E3DC000CD20D /* SPTestRailPlanTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailPlanTests.m; sourceTree = "<group>"; };
 		6302243E1CB309F1000CD20D /* SPTestRailCaseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailCaseTests.m; sourceTree = "<group>"; };
 		630224421CB32BAD000CD20D /* SPTestRailTestAndResultTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailTestAndResultTests.m; sourceTree = "<group>"; };
@@ -64,9 +63,10 @@
 		637D622F1CB2421700ECAEA7 /* SPTestRailTestRunTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailTestRunTests.m; sourceTree = "<group>"; };
 		637E935A1CB7862F00882CE6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		63B8EE841CAE554E00A7C8D5 /* SPTestRailConfigTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestRailConfigTests.m; sourceTree = "<group>"; };
-		E0614BAD14D8AFC32A4AF092 /* Pods-SPTestRailReporterExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPTestRailReporterExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPTestRailReporterExample/Pods-SPTestRailReporterExample.debug.xcconfig"; sourceTree = "<group>"; };
-		E2A895000E176B2D35915EF6 /* Pods_SPTestRailReporterExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPTestRailReporterExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6BF9A1E4509EB0644E831C9 /* Pods_SPTestRailReporterExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPTestRailReporterExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90198AB433031C453268D7D9 /* Pods_SPTestRailReporterExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPTestRailReporterExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B01D004513C52A436F93DE6B /* Pods-SPTestRailReporterExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPTestRailReporterExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPTestRailReporterExampleTests/Pods-SPTestRailReporterExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		C97270F125A5BA7BB5FB6636 /* Pods-SPTestRailReporterExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPTestRailReporterExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPTestRailReporterExampleTests/Pods-SPTestRailReporterExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FDDCEA51B6929B1560353D51 /* Pods_SPTestRailReporterExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPTestRailReporterExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B80627953CC3B5F0BA806E51 /* Pods_SPTestRailReporterExample.framework in Frameworks */,
+				16067578F23BA6F6C90A6CBC /* Pods_SPTestRailReporterExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,22 +82,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FC5E4F386D13BCEF9898003 /* Pods_SPTestRailReporterExampleTests.framework in Frameworks */,
+				E51E19FBC3733F675E435249 /* Pods_SPTestRailReporterExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4F192FE3D14121976A0C9B73 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E2A895000E176B2D35915EF6 /* Pods_SPTestRailReporterExample.framework */,
-				E6BF9A1E4509EB0644E831C9 /* Pods_SPTestRailReporterExampleTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		631372391CA225A500B89E89 = {
 			isa = PBXGroup;
 			children = (
@@ -105,8 +96,8 @@
 				631372441CA225A500B89E89 /* SPTestRailReporterExample */,
 				6313725E1CA225A500B89E89 /* SPTestRailReporterExampleTests */,
 				631372431CA225A500B89E89 /* Products */,
-				E9D2FA691141678130426310 /* Pods */,
-				4F192FE3D14121976A0C9B73 /* Frameworks */,
+				AC5861CE4C3E9534E229B1B0 /* Pods */,
+				6DF19FF2E6954E84D9DE7EFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,13 +168,22 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		E9D2FA691141678130426310 /* Pods */ = {
+		6DF19FF2E6954E84D9DE7EFB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E0614BAD14D8AFC32A4AF092 /* Pods-SPTestRailReporterExample.debug.xcconfig */,
-				4CD2860CEB700E21A59AAA76 /* Pods-SPTestRailReporterExample.release.xcconfig */,
-				0EF3FC7FD83324EDD57E7846 /* Pods-SPTestRailReporterExampleTests.debug.xcconfig */,
-				0894DFB9841A0A170699C40B /* Pods-SPTestRailReporterExampleTests.release.xcconfig */,
+				90198AB433031C453268D7D9 /* Pods_SPTestRailReporterExample.framework */,
+				FDDCEA51B6929B1560353D51 /* Pods_SPTestRailReporterExampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC5861CE4C3E9534E229B1B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EA64AB545627283604589CA /* Pods-SPTestRailReporterExample.debug.xcconfig */,
+				0D9A4866F1DA3C5639A2F2D0 /* Pods-SPTestRailReporterExample.release.xcconfig */,
+				C97270F125A5BA7BB5FB6636 /* Pods-SPTestRailReporterExampleTests.debug.xcconfig */,
+				B01D004513C52A436F93DE6B /* Pods-SPTestRailReporterExampleTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -505,7 +505,7 @@
 		};
 		631372651CA225A500B89E89 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0614BAD14D8AFC32A4AF092 /* Pods-SPTestRailReporterExample.debug.xcconfig */;
+			baseConfigurationReference = 2EA64AB545627283604589CA /* Pods-SPTestRailReporterExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SPTestRailReporterExample/Info.plist;
@@ -518,7 +518,7 @@
 		};
 		631372661CA225A500B89E89 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CD2860CEB700E21A59AAA76 /* Pods-SPTestRailReporterExample.release.xcconfig */;
+			baseConfigurationReference = 0D9A4866F1DA3C5639A2F2D0 /* Pods-SPTestRailReporterExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SPTestRailReporterExample/Info.plist;
@@ -531,7 +531,7 @@
 		};
 		631372681CA225A500B89E89 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0EF3FC7FD83324EDD57E7846 /* Pods-SPTestRailReporterExampleTests.debug.xcconfig */;
+			baseConfigurationReference = C97270F125A5BA7BB5FB6636 /* Pods-SPTestRailReporterExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SPTestRailReporterExampleTests/Info.plist;
@@ -544,7 +544,7 @@
 		};
 		631372691CA225A500B89E89 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0894DFB9841A0A170699C40B /* Pods-SPTestRailReporterExampleTests.release.xcconfig */;
+			baseConfigurationReference = B01D004513C52A436F93DE6B /* Pods-SPTestRailReporterExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SPTestRailReporterExampleTests/Info.plist;

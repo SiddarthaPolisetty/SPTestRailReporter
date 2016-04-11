@@ -31,7 +31,16 @@ DEPENDENCIES:
   - AFNetworking (= 2.5.4)
   - JSONModel (= 1.2.0)
   - NSData+Base64 (= 1.0.0)
-  - SPTestRailReporter (~> 1.0)
+  - SPTestRailReporter (from `https://github.com/SiddarthaPolisetty/SPTestRailReporter.git`)
+
+EXTERNAL SOURCES:
+  SPTestRailReporter:
+    :git: https://github.com/SiddarthaPolisetty/SPTestRailReporter.git
+
+CHECKOUT OPTIONS:
+  SPTestRailReporter:
+    :commit: ab482d872601c36fc0216efdb1c327faa13b45d5
+    :git: https://github.com/SiddarthaPolisetty/SPTestRailReporter.git
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
@@ -39,6 +48,6 @@ SPEC CHECKSUMS:
   NSData+Base64: 4e84902c4db907a15673474677e57763ef3903e4
   SPTestRailReporter: 283d86881567ea5cba1328bb79c801400c31215a
 
-PODFILE CHECKSUM: 8d2738c2bd2c4b4f205079a1daa82b079e0e87ec
+PODFILE CHECKSUM: 2e5fa25ddc815195cddaa0a6a80a115243052507
 
 COCOAPODS: 1.0.0.beta.6

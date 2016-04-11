@@ -5,10 +5,7 @@ rvm: 2.2.2
 before_install:
   - gem install cocoapods
   - brew update
-  - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
 
 language: objective-c
 
-script: 
-  - xctool -workspace SPTestRailReporterExample/SPTestRailReporterExample.xcworkspace -scheme SPTestRailReporterExample -sdk iphonesimulator clean
-  - xctool -workspace SPTestRailReporterExample/SPTestRailReporterExample.xcworkspace -scheme SPTestRailReporterExample -sdk iphonesimulator build
+script: ./cleanbuildtest.sh

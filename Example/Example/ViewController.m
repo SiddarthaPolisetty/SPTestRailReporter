@@ -20,6 +20,8 @@
     self.homeUrlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://siddarthapolisetty.github.io/SPTestRailReporter"]];
     [self.webView loadRequest:self.homeUrlRequest];
     self.navigationItem.title = @"SPTestRailReporter";
+    UIBarButtonItem *homeItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(loadHome)];
+    self.navigationItem.rightBarButtonItem = homeItem;
 }
 
 - (void)loadHome {

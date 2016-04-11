@@ -10,4 +10,4 @@ before_install:
 
 language: objective-c
 
-script:./cleanbuildtest.sh
+script: cleanbuildtest.sh

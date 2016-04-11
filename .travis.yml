@@ -9,4 +9,6 @@ before_install:
 
 language: objective-c
 
-script: ./cleanbuildtest.sh
+script: 
+  - xctool -workspace SPTestRailReporterExample/SPTestRailReporterExample.xcworkspace -scheme SPTestRailReporterExample -sdk iphonesimulator clean
+  - xctool -workspace SPTestRailReporterExample/SPTestRailReporterExample.xcworkspace -scheme SPTestRailReporterExample -sdk iphonesimulator build

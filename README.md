@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/SiddarthaPolisetty/SPTestRailReporter.svg?token=gvbx8gBcsPpfM9guFszy&branch=master)](https://travis-ci.com/SiddarthaPolisetty/SPTestRailReporter)
+[![Build Status](https://travis-ci.org/SiddarthaPolisetty/SPTestRailReporter.svg?branch=master)
 [![Version](http://img.shields.io/cocoapods/v/SPTestRailReporter.svg?style=flat)](https://cocoapods.org/?q=SPTestRail) 
 [![Platform](http://img.shields.io/cocoapods/p/SPTestRailReporter.svg?style=flat)](https://cocoapods.org/?q=SPTestRail)
 [![License](http://img.shields.io/cocoapods/l/SPTestRailReporter.svg?style=flat)](https://github.com/SiddarthaPolisetty/SPTestRailReporter/blob/master/LICENSE)

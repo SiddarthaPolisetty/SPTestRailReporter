@@ -8,4 +8,8 @@ before_install:
 
 language: objective-c
 
+addons:
+    code_climate:
+        repo_token: 2cd2d1b07d20c72ed3cf631c1e4a38ef645f8b919dc136dce16c9bdcd3feb61b
+
 script: ./cleanbuildtest.sh

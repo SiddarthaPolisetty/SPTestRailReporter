@@ -153,4 +153,4 @@ Created with love by [Siddartha Polisetty](https://www.linkedin.com/in/siddartha
 Please Create an issue and assign it to @SiddarthaPolisetty.
 
 ## Shameless Plugs
-[!(https://s3.amazonaws.com/mentions/mentions.png)]
+![Mentions](https://s3.amazonaws.com/mentions/mentions.png)

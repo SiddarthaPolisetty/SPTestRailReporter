@@ -155,4 +155,4 @@ Please Create an issue and assign it to @SiddarthaPolisetty.
 ## Shameless Plugs
 ![Mentions](https://s3.amazonaws.com/mentions/mentions.png)
 
-## Together we can fight World Hunger. Please [Donate](http://www.shfb.org/donate)
+## Together we can end World Hunger. Please [Donate](http://www.shfb.org/donate)

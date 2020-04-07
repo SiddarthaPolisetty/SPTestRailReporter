@@ -24,7 +24,6 @@
 //  SOFTWARE.
 //
 #import "SPTestRailReporter.h"
-#import <AFNetworking/AFHTTPRequestOperationManager.h>
 #import "NSData+Base64.h"
 #import "JSONHTTPClient.h"
 
@@ -53,11 +52,9 @@
 }
 
 
-- (id) syncronousRequestWithMethod:(NSString*)method URL:(NSURL*)requestURL Parameters: (NSDictionary*) parameters Error:(NSError **)error {
+- (id) syncronousRequestWithMethod:(NSString*)method URL:(NSURL*)requestURL Parameters: (NSDictionary*) parameters Error:(NSError *__autoreleasing *)error {
     __block id reponseJSON = nil;
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    manager.completionQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     NSMutableURLRequest *mitrRequest = [NSMutableURLRequest requestWithURL:requestURL];
     [mitrRequest setHTTPMethod:method];
     [mitrRequest setValue:@"application/json" forHTTPHeaderField:@"Accept"];
@@ -73,16 +70,21 @@
         }
         [mitrRequest setHTTPBody:requestData];
     }
-    AFHTTPRequestOperation *operation = [manager HTTPRequestOperationWithRequest:mitrRequest success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        reponseJSON = [responseObject mutableCopy];
-        dispatch_semaphore_signal(semaphore);
-    } failure:^(AFHTTPRequestOperation *operation, NSError *networkError) {
+    NSURLSessionTask *task = [NSURLSession.sharedSession dataTaskWithRequest:mitrRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable networkError) {
         if (networkError) {
             if(error) *error = networkError;
+            dispatch_semaphore_signal(semaphore);
+            return;
+        }
+        if (data) {
+            id dictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+            if (dictionary && [dictionary isKindOfClass:[NSDictionary class]]) {
+                reponseJSON = [dictionary mutableCopy];
+            }
         }
         dispatch_semaphore_signal(semaphore);
     }];
-    [operation start];
+    [task resume];
     dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
     return reponseJSON;
 }

@@ -16,7 +16,6 @@ Pod::Spec.new do |s|
     s.source_files  = "SPTestRailReporter"
     s.requires_arc = true
     s.dependency 'NSData+Base64', '1.0.0'
-    s.dependency 'AFNetworking', '2.5.4'
     s.dependency 'JSONModel', '1.2.0'
 
 end

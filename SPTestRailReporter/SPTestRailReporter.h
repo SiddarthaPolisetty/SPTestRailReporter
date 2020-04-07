@@ -29,7 +29,6 @@
 
 
 #import <Foundation/Foundation.h>
-#import <AFNetworking/AFNetworking.h>
 #import "SPTestRailConfigurationBuilder.h"
 #import "SPTestRailProject.h"
 #import "SPTestRailSuite.h"
